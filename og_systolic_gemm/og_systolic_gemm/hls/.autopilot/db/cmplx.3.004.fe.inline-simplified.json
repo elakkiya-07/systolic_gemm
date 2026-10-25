@@ -1,0 +1,113 @@
+{
+  "0": {
+    "basicblocks": 9,
+    "calls": "4",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "og_systolic_gemm.cpp",
+    "fileloc": 117,
+    "instructions": 135,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 18,
+    "name": "og_systolic_gemm",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 446
+  },
+  "1": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "og_systolic_gemm.cpp",
+    "fileloc": 70,
+    "instructions": 13,
+    "memory_accesses": 1,
+    "name": "sink_B",
+    "total_instructions": 13
+  },
+  "2": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "og_systolic_gemm.cpp",
+    "fileloc": 49,
+    "instructions": 15,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 2,
+    "name": "feed_A",
+    "total_instructions": 15
+  },
+  "3": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "og_systolic_gemm.cpp",
+    "fileloc": 31,
+    "instructions": 19,
+    "memory_accesses": 6,
+    "name": "pe",
+    "total_instructions": 19
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "2 7 3 3 3 3 3 3 3 3 3 6 1 5",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "og_systolic_gemm.cpp",
+    "fileloc": 86,
+    "instructions": 69,
+    "memory_accesses": 0,
+    "name": "systolic_core",
+    "total_instructions": 311
+  },
+  "5": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "og_systolic_gemm.cpp",
+    "fileloc": 77,
+    "instructions": 15,
+    "memory_accesses": 2,
+    "name": "collect",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "6": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "og_systolic_gemm.cpp",
+    "fileloc": 63,
+    "instructions": 13,
+    "memory_accesses": 1,
+    "name": "sink_A",
+    "total_instructions": 13
+  },
+  "7": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "og_systolic_gemm.cpp",
+    "fileloc": 56,
+    "instructions": 15,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 2,
+    "name": "feed_B",
+    "total_instructions": 15
+  }
+}

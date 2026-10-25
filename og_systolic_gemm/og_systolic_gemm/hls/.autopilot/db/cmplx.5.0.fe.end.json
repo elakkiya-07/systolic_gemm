@@ -1,0 +1,500 @@
+{
+    "1": {
+        "name": "pe",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "31",
+        "instructions": "11",
+        "total_instructions": "45",
+        "calls": "23",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "pe.5_Pipeline_PE_LOOP",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "34",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "systolic_core",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "86",
+        "instructions": "151",
+        "total_instructions": "801",
+        "calls": "21 9 22 18 1 13 19 25 11 16 5 15 10 17",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "0": {
+        "name": "og_systolic_gemm",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "117",
+        "instructions": "78",
+        "total_instructions": "1045",
+        "calls": "24 3 7",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "27"
+        }
+    },
+    "4": {
+        "name": "pe.8_Pipeline_PE_LOOP",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "34",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "pe",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "31",
+        "instructions": "11",
+        "total_instructions": "45",
+        "calls": "20",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "pe.7_Pipeline_PE_LOOP",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "34",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "144",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "7",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "pe.2_Pipeline_PE_LOOP",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "34",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "feed_B",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "56",
+        "instructions": "58",
+        "total_instructions": "58",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "9",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "sink_B",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "70",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "7",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "pe",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "31",
+        "instructions": "11",
+        "total_instructions": "45",
+        "calls": "6",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "pe.1_Pipeline_PE_LOOP",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "34",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "pe",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "31",
+        "instructions": "11",
+        "total_instructions": "45",
+        "calls": "26",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "pe.6_Pipeline_PE_LOOP",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "34",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "sink_A",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "63",
+        "instructions": "30",
+        "total_instructions": "30",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "7",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "pe",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "31",
+        "instructions": "11",
+        "total_instructions": "45",
+        "calls": "4",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "collect",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "77",
+        "instructions": "69",
+        "total_instructions": "69",
+        "calls": "",
+        "basicblocks": "20",
+        "memory_accesses": "24",
+        "control_depth": "3",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "pe",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "31",
+        "instructions": "11",
+        "total_instructions": "45",
+        "calls": "8",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "pe",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "31",
+        "instructions": "11",
+        "total_instructions": "45",
+        "calls": "2",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "pe_Pipeline_PE_LOOP",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "34",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "feed_A",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "49",
+        "instructions": "58",
+        "total_instructions": "58",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "9",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "22": {
+        "name": "pe",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "31",
+        "instructions": "11",
+        "total_instructions": "45",
+        "calls": "12",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "23": {
+        "name": "pe.3_Pipeline_PE_LOOP",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "34",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "132",
+        "instructions": "121",
+        "total_instructions": "121",
+        "calls": "",
+        "basicblocks": "17",
+        "memory_accesses": "26",
+        "control_depth": "3",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "21"
+        },
+        "stores": {
+            "L": "24"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "25": {
+        "name": "pe",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "31",
+        "instructions": "11",
+        "total_instructions": "45",
+        "calls": "14",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "pe.4_Pipeline_PE_LOOP",
+        "file": "og_systolic_gemm.cpp",
+        "fileloc": "34",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

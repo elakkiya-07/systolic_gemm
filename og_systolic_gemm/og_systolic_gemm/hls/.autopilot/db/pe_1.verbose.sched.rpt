@@ -1,0 +1,131 @@
+
+
+================================================================
+== Vitis HLS Report for 'pe_1'
+================================================================
+* Date:           Mon Oct 26 01:25:04 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        og_systolic_gemm
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.268 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       10|       10|  0.100 us|  0.100 us|   10|   10|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%acc_04_loc = alloca i64 1"   --->   Operation 4 'alloca' 'acc_04_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @pe.1_Pipeline_PE_LOOP, i16 %aS_0_0, i16 %bS_0_0, i16 %aS_0_1, i16 %bS_1_0, i32 %acc_04_loc"   --->   Operation 5 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%call_ln0 = call void @pe.1_Pipeline_PE_LOOP, i16 %aS_0_0, i16 %bS_0_0, i16 %aS_0_1, i16 %bS_1_0, i32 %acc_04_loc"   --->   Operation 6 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 3.63>
+ST_3 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cS_0_0, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_1_0, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_0_0, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_0_1, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_0_0, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%fence_ln45 = fence void @_ssdm_op_Fence, i16 %aS_0_0, i16 %bS_0_0, i16 %aS_0_1, i16 %bS_1_0, i32 4294967295, i32 %cS_0_0, i32 0" [og_systolic_gemm.cpp:45]   --->   Operation 12 'fence' 'fence_ln45' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%acc_04_loc_load = load i32 %acc_04_loc"   --->   Operation 13 'load' 'acc_04_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/1] ( I:3.63ns O:3.63ns )   --->   "%write_ln45 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %cS_0_0, i32 %acc_04_loc_load" [og_systolic_gemm.cpp:45]   --->   Operation 14 'write' 'write_ln45' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln46 = ret" [og_systolic_gemm.cpp:46]   --->   Operation 15 'ret' 'ret_ln46' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 3.634ns
+The critical path consists of the following:
+	'load' operation 32 bit ('acc_04_loc_load') on local variable 'acc_04_loc' [14]  (0.000 ns)
+	fifo write operation ('write_ln45', og_systolic_gemm.cpp:45) on port 'cS_0_0' (og_systolic_gemm.cpp:45) [15]  (3.634 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,55 @@
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:2269:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:2269:5: note: FIX-IT applied suggested code changes
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:2283:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:2283:5: note: FIX-IT applied suggested code changes
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:2297:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:2297:5: note: FIX-IT applied suggested code changes
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:5805:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:5805:7: note: FIX-IT applied suggested code changes
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50062:9: remark: Added loop label VITIS_LOOP_51_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < 3; i++) {
+        ^
+        VITIS_LOOP_51_1: 
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50062:9: note: FIX-IT applied suggested code changes
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50069:9: remark: Added loop label VITIS_LOOP_58_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < 3; j++) {
+        ^
+        VITIS_LOOP_58_1: 
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50069:9: note: FIX-IT applied suggested code changes
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50076:9: remark: Added loop label VITIS_LOOP_65_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < 3; i++) {
+        ^
+        VITIS_LOOP_65_1: 
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50076:9: note: FIX-IT applied suggested code changes
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50083:9: remark: Added loop label VITIS_LOOP_72_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < 3; j++) {
+        ^
+        VITIS_LOOP_72_1: 
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50083:9: note: FIX-IT applied suggested code changes
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50090:9: remark: Added loop label VITIS_LOOP_79_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < 3; j++) {
+        ^
+        VITIS_LOOP_79_1: 
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50090:9: note: FIX-IT applied suggested code changes
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50148:9: remark: Added loop label VITIS_LOOP_133_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < 3; j++) {
+        ^
+        VITIS_LOOP_133_1: 
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50148:9: note: FIX-IT applied suggested code changes
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50160:9: remark: Added loop label VITIS_LOOP_145_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 3; j++) {
+        ^
+        VITIS_LOOP_145_2: 
+C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp:50160:9: note: FIX-IT applied suggested code changes

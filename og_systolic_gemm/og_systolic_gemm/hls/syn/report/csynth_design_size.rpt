@@ -1,0 +1,58 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                       | Instructions | Description                                                                            |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                            | 1,641        | After all functions are compiled and linked into a single design                       |
+|               |                            |              |                                                                                        |
+| Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                 |   910        | user unroll pragmas are applied                                                        |
+|               | (2) simplification         |   536        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 |   512        | user inline pragmas are applied                                                        |
+|               | (4) simplification         |   446        | simplification of applied user inline pragmas                                          |
+|               |                            |              |                                                                                        |
+| Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition        |   781        | user array partition pragmas are applied                                               |
+|               | (2) simplification         |   727        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate |   727        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          |   727        | apply array reshape pragmas                                                            |
+|               | (5) access patterns        |   916        | array access pattern optmizations                                                      |
+|               |                            |              |                                                                                        |
+| Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification    |   818        | loop and instruction simplification                                                    |
+|               | (2) parallelization        |   755        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        |   725        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         |   725        | simplification of design after performance transformations                             |
+|               |                            |              |                                                                                        |
+| HW Transforms |                            |              | After hardware transfomations                                                          |
+|               | (1) lowering               |   743        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          |   821        | high level synthesis optimizations                                                     |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++--------------------+--------------------------+----------------+---------------+---------------+---------------+---------------+
+| Function           | Location                 | Compile/Link   | Unroll/Inline | Array/Struct  | Performance   | HW Transforms |
++--------------------+--------------------------+----------------+---------------+---------------+---------------+---------------+
+| + og_systolic_gemm | og_systolic_gemm.cpp:117 | 1,641          | 446           | 916           | 725           | 821           |
+|    axis_to_data    | og_systolic_gemm.cpp:13  |  190 (2 calls) |               |               |               |               |
+|  + systolic_core   | og_systolic_gemm.cpp:86  |  750           | 311           | 534           | 507           | 643           |
+|     feed_A         | og_systolic_gemm.cpp:49  |   31           |  15           |  33           |  24           |  37           |
+|     feed_B         | og_systolic_gemm.cpp:56  |   31           |  15           |  33           |  24           |  37           |
+|     pe             | og_systolic_gemm.cpp:31  |  455           | 171 (9 calls) | 180 (9 calls) | 171 (9 calls) | 297 (9 calls) |
+|     sink_A         | og_systolic_gemm.cpp:63  |   34           |  13           |  20           |  20           |  30           |
+|     sink_B         | og_systolic_gemm.cpp:70  |   34           |  13           |  20           |  20           |  30           |
+|     collect        | og_systolic_gemm.cpp:77  |   41           |  15           |  71           |  71           |  96           |
+|    acc_to_axis     | og_systolic_gemm.cpp:20  |  267           |               |               |               |               |
++--------------------+--------------------------+----------------+---------------+---------------+---------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

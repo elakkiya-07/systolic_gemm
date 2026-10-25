@@ -1,0 +1,364 @@
+
+
+================================================================
+== Vitis HLS Report for 'systolic_core'
+================================================================
+* Date:           Mon Oct 26 01:25:15 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        og_systolic_gemm
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.299 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |       17|       17|  0.170 us|  0.170 us|   11|   11|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 14, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%B_2_2_val18_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %B_2_2_val18"   --->   Operation 15 'read' 'B_2_2_val18_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%B_2_1_val17_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %B_2_1_val17"   --->   Operation 16 'read' 'B_2_1_val17_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%B_2_0_val16_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %B_2_0_val16"   --->   Operation 17 'read' 'B_2_0_val16_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%B_1_2_val15_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %B_1_2_val15"   --->   Operation 18 'read' 'B_1_2_val15_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%B_1_1_val14_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %B_1_1_val14"   --->   Operation 19 'read' 'B_1_1_val14_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%B_1_0_val13_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %B_1_0_val13"   --->   Operation 20 'read' 'B_1_0_val13_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%B_0_2_val12_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %B_0_2_val12"   --->   Operation 21 'read' 'B_0_2_val12_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%B_0_1_val11_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %B_0_1_val11"   --->   Operation 22 'read' 'B_0_1_val11_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%B_0_0_val10_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %B_0_0_val10"   --->   Operation 23 'read' 'B_0_0_val10_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%A_2_2_val9_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %A_2_2_val9"   --->   Operation 24 'read' 'A_2_2_val9_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%A_2_1_val8_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %A_2_1_val8"   --->   Operation 25 'read' 'A_2_1_val8_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%A_2_0_val7_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %A_2_0_val7"   --->   Operation 26 'read' 'A_2_0_val7_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%A_1_2_val6_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %A_1_2_val6"   --->   Operation 27 'read' 'A_1_2_val6_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%A_1_1_val5_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %A_1_1_val5"   --->   Operation 28 'read' 'A_1_1_val5_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%A_1_0_val4_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %A_1_0_val4"   --->   Operation 29 'read' 'A_1_0_val4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%A_0_2_val3_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %A_0_2_val3"   --->   Operation 30 'read' 'A_0_2_val3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%A_0_1_val2_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %A_0_1_val2"   --->   Operation 31 'read' 'A_0_1_val2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%A_0_0_val1_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %A_0_0_val1"   --->   Operation 32 'read' 'A_0_0_val1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%aS = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 33 'alloca' 'aS' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%aS_1 = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 34 'alloca' 'aS_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%aS_2 = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 35 'alloca' 'aS_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%aS_3 = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 36 'alloca' 'aS_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%aS_4 = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 37 'alloca' 'aS_4' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%aS_5 = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 38 'alloca' 'aS_5' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%aS_6 = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 39 'alloca' 'aS_6' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%aS_7 = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 40 'alloca' 'aS_7' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%aS_8 = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 41 'alloca' 'aS_8' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%aS_9 = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 42 'alloca' 'aS_9' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%aS_10 = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 43 'alloca' 'aS_10' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%aS_11 = alloca i64 1" [og_systolic_gemm.cpp:88]   --->   Operation 44 'alloca' 'aS_11' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%bS = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 45 'alloca' 'bS' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%bS_1 = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 46 'alloca' 'bS_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%bS_2 = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 47 'alloca' 'bS_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%bS_3 = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 48 'alloca' 'bS_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%bS_4 = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 49 'alloca' 'bS_4' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%bS_5 = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 50 'alloca' 'bS_5' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%bS_6 = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 51 'alloca' 'bS_6' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%bS_7 = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 52 'alloca' 'bS_7' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%bS_8 = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 53 'alloca' 'bS_8' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%bS_9 = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 54 'alloca' 'bS_9' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%bS_10 = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 55 'alloca' 'bS_10' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%bS_11 = alloca i64 1" [og_systolic_gemm.cpp:89]   --->   Operation 56 'alloca' 'bS_11' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 4> <FIFO>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%cS = alloca i64 1" [og_systolic_gemm.cpp:90]   --->   Operation 57 'alloca' 'cS' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%cS_1 = alloca i64 1" [og_systolic_gemm.cpp:90]   --->   Operation 58 'alloca' 'cS_1' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%cS_2 = alloca i64 1" [og_systolic_gemm.cpp:90]   --->   Operation 59 'alloca' 'cS_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%cS_3 = alloca i64 1" [og_systolic_gemm.cpp:90]   --->   Operation 60 'alloca' 'cS_3' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%cS_4 = alloca i64 1" [og_systolic_gemm.cpp:90]   --->   Operation 61 'alloca' 'cS_4' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%cS_5 = alloca i64 1" [og_systolic_gemm.cpp:90]   --->   Operation 62 'alloca' 'cS_5' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%cS_6 = alloca i64 1" [og_systolic_gemm.cpp:90]   --->   Operation 63 'alloca' 'cS_6' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%cS_7 = alloca i64 1" [og_systolic_gemm.cpp:90]   --->   Operation 64 'alloca' 'cS_7' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%cS_8 = alloca i64 1" [og_systolic_gemm.cpp:90]   --->   Operation 65 'alloca' 'cS_8' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 66 [2/2] (1.58ns)   --->   "%call_ln98 = call void @feed_A, i16 %A_0_0_val1_read, i16 %A_0_1_val2_read, i16 %A_0_2_val3_read, i16 %A_1_0_val4_read, i16 %A_1_1_val5_read, i16 %A_1_2_val6_read, i16 %A_2_0_val7_read, i16 %A_2_1_val8_read, i16 %A_2_2_val9_read, i16 %aS, i16 %aS_4, i16 %aS_8" [og_systolic_gemm.cpp:98]   --->   Operation 66 'call' 'call_ln98' <Predicate = true> <Delay = 1.58> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 67 [2/2] (1.58ns)   --->   "%call_ln99 = call void @feed_B, i16 %B_0_0_val10_read, i16 %B_0_1_val11_read, i16 %B_0_2_val12_read, i16 %B_1_0_val13_read, i16 %B_1_1_val14_read, i16 %B_1_2_val15_read, i16 %B_2_0_val16_read, i16 %B_2_1_val17_read, i16 %B_2_2_val18_read, i16 %bS, i16 %bS_1, i16 %bS_2" [og_systolic_gemm.cpp:99]   --->   Operation 67 'call' 'call_ln99' <Predicate = true> <Delay = 1.58> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 4.91>
+ST_2 : Operation 68 [1/2] (4.91ns)   --->   "%call_ln98 = call void @feed_A, i16 %A_0_0_val1_read, i16 %A_0_1_val2_read, i16 %A_0_2_val3_read, i16 %A_1_0_val4_read, i16 %A_1_1_val5_read, i16 %A_1_2_val6_read, i16 %A_2_0_val7_read, i16 %A_2_1_val8_read, i16 %A_2_2_val9_read, i16 %aS, i16 %aS_4, i16 %aS_8" [og_systolic_gemm.cpp:98]   --->   Operation 68 'call' 'call_ln98' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 69 [1/2] (4.91ns)   --->   "%call_ln99 = call void @feed_B, i16 %B_0_0_val10_read, i16 %B_0_1_val11_read, i16 %B_0_2_val12_read, i16 %B_1_0_val13_read, i16 %B_1_1_val14_read, i16 %B_1_2_val15_read, i16 %B_2_0_val16_read, i16 %B_2_1_val17_read, i16 %B_2_2_val18_read, i16 %bS, i16 %bS_1, i16 %bS_2" [og_systolic_gemm.cpp:99]   --->   Operation 69 'call' 'call_ln99' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 70 [2/2] (0.00ns)   --->   "%call_ln105 = call void @pe.1, i16 %aS, i16 %aS_1, i16 %bS, i16 %bS_3, i32 %cS" [og_systolic_gemm.cpp:105]   --->   Operation 70 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 71 [1/2] (0.00ns)   --->   "%call_ln105 = call void @pe.1, i16 %aS, i16 %aS_1, i16 %bS, i16 %bS_3, i32 %cS" [og_systolic_gemm.cpp:105]   --->   Operation 71 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 72 [2/2] (0.00ns)   --->   "%call_ln105 = call void @pe.2, i16 %aS_1, i16 %aS_2, i16 %bS_1, i16 %bS_4, i32 %cS_1" [og_systolic_gemm.cpp:105]   --->   Operation 72 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 73 [2/2] (0.00ns)   --->   "%call_ln105 = call void @pe.4, i16 %aS_4, i16 %aS_5, i16 %bS_3, i16 %bS_6, i32 %cS_3" [og_systolic_gemm.cpp:105]   --->   Operation 73 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 74 [1/2] (0.00ns)   --->   "%call_ln105 = call void @pe.2, i16 %aS_1, i16 %aS_2, i16 %bS_1, i16 %bS_4, i32 %cS_1" [og_systolic_gemm.cpp:105]   --->   Operation 74 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 75 [1/2] (0.00ns)   --->   "%call_ln105 = call void @pe.4, i16 %aS_4, i16 %aS_5, i16 %bS_3, i16 %bS_6, i32 %cS_3" [og_systolic_gemm.cpp:105]   --->   Operation 75 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 76 [2/2] (0.00ns)   --->   "%call_ln105 = call void @pe.3, i16 %aS_2, i16 %aS_3, i16 %bS_2, i16 %bS_5, i32 %cS_2" [og_systolic_gemm.cpp:105]   --->   Operation 76 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 77 [2/2] (0.00ns)   --->   "%call_ln105 = call void @pe.5, i16 %aS_5, i16 %aS_6, i16 %bS_4, i16 %bS_7, i32 %cS_4" [og_systolic_gemm.cpp:105]   --->   Operation 77 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 78 [2/2] (0.00ns)   --->   "%call_ln105 = call void @pe.7, i16 %aS_8, i16 %aS_9, i16 %bS_6, i16 %bS_9, i32 %cS_6" [og_systolic_gemm.cpp:105]   --->   Operation 78 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 79 [1/2] (0.00ns)   --->   "%call_ln105 = call void @pe.3, i16 %aS_2, i16 %aS_3, i16 %bS_2, i16 %bS_5, i32 %cS_2" [og_systolic_gemm.cpp:105]   --->   Operation 79 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 80 [1/2] (0.00ns)   --->   "%call_ln105 = call void @pe.5, i16 %aS_5, i16 %aS_6, i16 %bS_4, i16 %bS_7, i32 %cS_4" [og_systolic_gemm.cpp:105]   --->   Operation 80 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 81 [1/2] (0.00ns)   --->   "%call_ln105 = call void @pe.7, i16 %aS_8, i16 %aS_9, i16 %bS_6, i16 %bS_9, i32 %cS_6" [og_systolic_gemm.cpp:105]   --->   Operation 81 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 82 [2/2] (0.00ns)   --->   "%call_ln105 = call void @pe.6, i16 %aS_6, i16 %aS_7, i16 %bS_5, i16 %bS_8, i32 %cS_5" [og_systolic_gemm.cpp:105]   --->   Operation 82 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 83 [2/2] (0.00ns)   --->   "%call_ln105 = call void @pe.8, i16 %aS_9, i16 %aS_10, i16 %bS_7, i16 %bS_10, i32 %cS_7" [og_systolic_gemm.cpp:105]   --->   Operation 83 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 84 [1/2] (0.00ns)   --->   "%call_ln105 = call void @pe.6, i16 %aS_6, i16 %aS_7, i16 %bS_5, i16 %bS_8, i32 %cS_5" [og_systolic_gemm.cpp:105]   --->   Operation 84 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 85 [1/2] (0.00ns)   --->   "%call_ln105 = call void @pe.8, i16 %aS_9, i16 %aS_10, i16 %bS_7, i16 %bS_10, i32 %cS_7" [og_systolic_gemm.cpp:105]   --->   Operation 85 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 86 [2/2] (0.00ns)   --->   "%call_ln105 = call void @pe, i16 %aS_10, i16 %aS_11, i16 %bS_8, i16 %bS_11, i32 %cS_8" [og_systolic_gemm.cpp:105]   --->   Operation 86 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 87 [1/2] (0.00ns)   --->   "%call_ln105 = call void @pe, i16 %aS_10, i16 %aS_11, i16 %bS_8, i16 %bS_11, i32 %cS_8" [og_systolic_gemm.cpp:105]   --->   Operation 87 'call' 'call_ln105' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 88 [2/2] (0.00ns)   --->   "%call_ln111 = call void @sink_A, i16 %aS_3, i16 %aS_7, i16 %aS_11" [og_systolic_gemm.cpp:111]   --->   Operation 88 'call' 'call_ln111' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 89 [2/2] (0.00ns)   --->   "%call_ln112 = call void @sink_B, i16 %bS_9, i16 %bS_10, i16 %bS_11" [og_systolic_gemm.cpp:112]   --->   Operation 89 'call' 'call_ln112' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 90 [2/2] (0.00ns)   --->   "%call_ln113 = call void @collect, i32 %cS, i32 %cS_1, i32 %cS_2, i32 %cS_3, i32 %cS_4, i32 %cS_5, i32 %cS_6, i32 %cS_7, i32 %cS_8, i32 %C_0_0, i32 %C_0_1, i32 %C_0_2, i32 %C_1_0, i32 %C_1_1, i32 %C_1_2, i32 %C_2_0, i32 %C_2_1, i32 %C_2_2" [og_systolic_gemm.cpp:113]   --->   Operation 90 'call' 'call_ln113' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 4.91>
+ST_14 : Operation 91 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %B_2_2_val18, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 91 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 92 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %B_2_1_val17, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 92 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 93 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %B_2_0_val16, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 93 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 94 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %B_1_2_val15, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 94 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 95 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %B_1_1_val14, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 95 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 96 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %B_1_0_val13, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 96 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 97 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %B_0_2_val12, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 97 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 98 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %B_0_1_val11, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 98 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 99 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %B_0_0_val10, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 99 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 100 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %A_2_2_val9, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 100 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 101 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %A_2_1_val8, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 101 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 102 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %A_2_0_val7, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 102 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 103 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %A_1_2_val6, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 103 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 104 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %A_1_1_val5, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 104 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 105 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %A_1_0_val4, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 105 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 106 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %A_0_2_val3, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 106 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 107 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %A_0_1_val2, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 107 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 108 [1/1] (0.00ns)   --->   "%specstablecontent_ln87 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %A_0_0_val1, i1 1, void @p_str" [og_systolic_gemm.cpp:87]   --->   Operation 108 'specstablecontent' 'specstablecontent_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 109 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln87 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_8" [og_systolic_gemm.cpp:87]   --->   Operation 109 'specdataflowpipeline' 'specdataflowpipeline_ln87' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 110 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @aS_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS, i16 %aS"   --->   Operation 110 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 111 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 111 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 112 [1/1] (0.00ns)   --->   "%empty_24 = specchannel i32 @_ssdm_op_SpecChannel, void @aS_OC_1_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS_1, i16 %aS_1"   --->   Operation 112 'specchannel' 'empty_24' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 113 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_1, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 113 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 114 [1/1] (0.00ns)   --->   "%empty_25 = specchannel i32 @_ssdm_op_SpecChannel, void @aS_OC_2_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS_2, i16 %aS_2"   --->   Operation 114 'specchannel' 'empty_25' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 115 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_2, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 115 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 116 [1/1] (0.00ns)   --->   "%empty_26 = specchannel i32 @_ssdm_op_SpecChannel, void @aS_OC_3_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS_3, i16 %aS_3"   --->   Operation 116 'specchannel' 'empty_26' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 117 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_3, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 117 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 118 [1/1] (0.00ns)   --->   "%empty_27 = specchannel i32 @_ssdm_op_SpecChannel, void @aS_OC_4_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS_4, i16 %aS_4"   --->   Operation 118 'specchannel' 'empty_27' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 119 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_4, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 119 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 120 [1/1] (0.00ns)   --->   "%empty_28 = specchannel i32 @_ssdm_op_SpecChannel, void @aS_OC_5_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS_5, i16 %aS_5"   --->   Operation 120 'specchannel' 'empty_28' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 121 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_5, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 121 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 122 [1/1] (0.00ns)   --->   "%empty_29 = specchannel i32 @_ssdm_op_SpecChannel, void @aS_OC_6_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS_6, i16 %aS_6"   --->   Operation 122 'specchannel' 'empty_29' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 123 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_6, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 123 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 124 [1/1] (0.00ns)   --->   "%empty_30 = specchannel i32 @_ssdm_op_SpecChannel, void @aS_OC_7_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS_7, i16 %aS_7"   --->   Operation 124 'specchannel' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 125 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_7, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 125 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 126 [1/1] (0.00ns)   --->   "%empty_31 = specchannel i32 @_ssdm_op_SpecChannel, void @aS_OC_8_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS_8, i16 %aS_8"   --->   Operation 126 'specchannel' 'empty_31' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 127 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_8, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 127 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 128 [1/1] (0.00ns)   --->   "%empty_32 = specchannel i32 @_ssdm_op_SpecChannel, void @aS_OC_9_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS_9, i16 %aS_9"   --->   Operation 128 'specchannel' 'empty_32' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 129 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_9, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 129 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 130 [1/1] (0.00ns)   --->   "%empty_33 = specchannel i32 @_ssdm_op_SpecChannel, void @aS_OC_10_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS_10, i16 %aS_10"   --->   Operation 130 'specchannel' 'empty_33' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 131 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_10, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 131 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 132 [1/1] (0.00ns)   --->   "%empty_34 = specchannel i32 @_ssdm_op_SpecChannel, void @aS_OC_11_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %aS_11, i16 %aS_11"   --->   Operation 132 'specchannel' 'empty_34' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 133 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %aS_11, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 133 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 134 [1/1] (0.00ns)   --->   "%empty_35 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS, i16 %bS"   --->   Operation 134 'specchannel' 'empty_35' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 135 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 135 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 136 [1/1] (0.00ns)   --->   "%empty_36 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_OC_1_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS_1, i16 %bS_1"   --->   Operation 136 'specchannel' 'empty_36' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 137 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_1, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 137 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 138 [1/1] (0.00ns)   --->   "%empty_37 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_OC_2_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS_2, i16 %bS_2"   --->   Operation 138 'specchannel' 'empty_37' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 139 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_2, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 139 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 140 [1/1] (0.00ns)   --->   "%empty_38 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_OC_3_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS_3, i16 %bS_3"   --->   Operation 140 'specchannel' 'empty_38' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 141 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_3, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 141 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 142 [1/1] (0.00ns)   --->   "%empty_39 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_OC_4_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS_4, i16 %bS_4"   --->   Operation 142 'specchannel' 'empty_39' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 143 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_4, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 143 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 144 [1/1] (0.00ns)   --->   "%empty_40 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_OC_5_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS_5, i16 %bS_5"   --->   Operation 144 'specchannel' 'empty_40' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 145 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_5, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 145 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 146 [1/1] (0.00ns)   --->   "%empty_41 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_OC_6_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS_6, i16 %bS_6"   --->   Operation 146 'specchannel' 'empty_41' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 147 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_6, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 147 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 148 [1/1] (0.00ns)   --->   "%empty_42 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_OC_7_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS_7, i16 %bS_7"   --->   Operation 148 'specchannel' 'empty_42' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 149 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_7, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 149 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 150 [1/1] (0.00ns)   --->   "%empty_43 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_OC_8_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS_8, i16 %bS_8"   --->   Operation 150 'specchannel' 'empty_43' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 151 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_8, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 151 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 152 [1/1] (0.00ns)   --->   "%empty_44 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_OC_9_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS_9, i16 %bS_9"   --->   Operation 152 'specchannel' 'empty_44' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 153 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_9, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 153 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 154 [1/1] (0.00ns)   --->   "%empty_45 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_OC_10_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS_10, i16 %bS_10"   --->   Operation 154 'specchannel' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 155 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_10, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 155 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 156 [1/1] (0.00ns)   --->   "%empty_46 = specchannel i32 @_ssdm_op_SpecChannel, void @bS_OC_11_str, i32 1, void @p_str, void @p_str, i32 4, i32 4, i16 %bS_11, i16 %bS_11"   --->   Operation 156 'specchannel' 'empty_46' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 157 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bS_11, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 157 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 158 [1/1] (0.00ns)   --->   "%empty_47 = specchannel i32 @_ssdm_op_SpecChannel, void @cS_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %cS, i32 %cS"   --->   Operation 158 'specchannel' 'empty_47' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 159 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cS, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 159 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 160 [1/1] (0.00ns)   --->   "%empty_48 = specchannel i32 @_ssdm_op_SpecChannel, void @cS_OC_1_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %cS_1, i32 %cS_1"   --->   Operation 160 'specchannel' 'empty_48' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 161 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cS_1, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 161 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 162 [1/1] (0.00ns)   --->   "%empty_49 = specchannel i32 @_ssdm_op_SpecChannel, void @cS_OC_2_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %cS_2, i32 %cS_2"   --->   Operation 162 'specchannel' 'empty_49' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 163 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cS_2, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 163 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 164 [1/1] (0.00ns)   --->   "%empty_50 = specchannel i32 @_ssdm_op_SpecChannel, void @cS_OC_3_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %cS_3, i32 %cS_3"   --->   Operation 164 'specchannel' 'empty_50' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 165 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cS_3, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 165 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 166 [1/1] (0.00ns)   --->   "%empty_51 = specchannel i32 @_ssdm_op_SpecChannel, void @cS_OC_4_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %cS_4, i32 %cS_4"   --->   Operation 166 'specchannel' 'empty_51' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 167 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cS_4, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 167 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 168 [1/1] (0.00ns)   --->   "%empty_52 = specchannel i32 @_ssdm_op_SpecChannel, void @cS_OC_5_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %cS_5, i32 %cS_5"   --->   Operation 168 'specchannel' 'empty_52' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 169 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cS_5, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 169 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 170 [1/1] (0.00ns)   --->   "%empty_53 = specchannel i32 @_ssdm_op_SpecChannel, void @cS_OC_6_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %cS_6, i32 %cS_6"   --->   Operation 170 'specchannel' 'empty_53' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 171 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cS_6, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 171 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 172 [1/1] (0.00ns)   --->   "%empty_54 = specchannel i32 @_ssdm_op_SpecChannel, void @cS_OC_7_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %cS_7, i32 %cS_7"   --->   Operation 172 'specchannel' 'empty_54' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 173 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cS_7, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 173 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 174 [1/1] (0.00ns)   --->   "%empty_55 = specchannel i32 @_ssdm_op_SpecChannel, void @cS_OC_8_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i32 %cS_8, i32 %cS_8"   --->   Operation 174 'specchannel' 'empty_55' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 175 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %cS_8, void @empty_2, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 175 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 176 [1/2] (4.91ns)   --->   "%call_ln111 = call void @sink_A, i16 %aS_3, i16 %aS_7, i16 %aS_11" [og_systolic_gemm.cpp:111]   --->   Operation 176 'call' 'call_ln111' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 177 [1/2] (4.91ns)   --->   "%call_ln112 = call void @sink_B, i16 %bS_9, i16 %bS_10, i16 %bS_11" [og_systolic_gemm.cpp:112]   --->   Operation 177 'call' 'call_ln112' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 178 [1/2] (4.91ns)   --->   "%call_ln113 = call void @collect, i32 %cS, i32 %cS_1, i32 %cS_2, i32 %cS_3, i32 %cS_4, i32 %cS_5, i32 %cS_6, i32 %cS_7, i32 %cS_8, i32 %C_0_0, i32 %C_0_1, i32 %C_0_2, i32 %C_1_0, i32 %C_1_1, i32 %C_1_2, i32 %C_2_0, i32 %C_2_1, i32 %C_2_2" [og_systolic_gemm.cpp:113]   --->   Operation 178 'call' 'call_ln113' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 179 [1/1] (0.00ns)   --->   "%ret_ln114 = ret" [og_systolic_gemm.cpp:114]   --->   Operation 179 'ret' 'ret_ln114' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.588ns
+The critical path consists of the following:
+	wire read operation ('A_2_2_val9_read') on port 'A_2_2_val9' [56]  (0.000 ns)
+	'call' operation ('call_ln98', og_systolic_gemm.cpp:98) to 'feed_A' [164]  (1.588 ns)
+
+ <State 2>: 4.911ns
+The critical path consists of the following:
+	'call' operation ('call_ln98', og_systolic_gemm.cpp:98) to 'feed_A' [164]  (4.911 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+ <State 14>: 4.911ns
+The critical path consists of the following:
+	'call' operation ('call_ln111', og_systolic_gemm.cpp:111) to 'sink_A' [175]  (4.911 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

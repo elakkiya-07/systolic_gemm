@@ -1,0 +1,111 @@
+In file included from og_systolic_gemm.cpp:1:
+In file included from ./og_systolic_gemm.h:7:
+C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:149:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=get_data_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+^
+C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:154:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=set_data_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+^
+C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:255:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=keep_all_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+^
+C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:372:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=empty_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+^
+C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:380:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=full_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+^
+C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:389:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=read_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+^
+C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:400:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=read_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+^
+C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:412:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=write_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+^
+C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:423:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=read_nb_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+^
+C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:440:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=write_nb_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+^
+og_systolic_gemm.cpp:36:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+og_systolic_gemm.cpp:40:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=bind_op_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=pe_XLX_SEP_ PragmaOptions=variable=prod op=mul impl=dsp_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS BIND_OP variable=prod op=mul impl=dsp
+^
+og_systolic_gemm.cpp:52:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=feed_A_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+og_systolic_gemm.cpp:59:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=feed_B_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+og_systolic_gemm.cpp:66:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sink_A_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+og_systolic_gemm.cpp:73:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sink_B_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+og_systolic_gemm.cpp:80:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=collect_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+og_systolic_gemm.cpp:87:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+^
+og_systolic_gemm.cpp:91:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_core_XLX_SEP_ PragmaOptions=variable=aS complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=aS complete dim=0
+^
+og_systolic_gemm.cpp:92:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_core_XLX_SEP_ PragmaOptions=variable=bS complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=bS complete dim=0
+^
+og_systolic_gemm.cpp:93:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_core_XLX_SEP_ PragmaOptions=variable=cS complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=cS complete dim=0
+^
+og_systolic_gemm.cpp:94:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_core_XLX_SEP_ PragmaOptions=variable=aS depth=4_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=aS depth=4
+^
+og_systolic_gemm.cpp:95:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_core_XLX_SEP_ PragmaOptions=variable=bS depth=4_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=bS depth=4
+^
+og_systolic_gemm.cpp:96:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_core_XLX_SEP_ PragmaOptions=variable=cS depth=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=cS depth=2
+^
+og_systolic_gemm.cpp:102:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+og_systolic_gemm.cpp:104:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_core_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+directive:1:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=og_systolic_gemm_XLX_SEP_ PragmaOptions=name=og_systolic_gemm_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=og_systolic_gemm
+^
+og_systolic_gemm.cpp:120:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=og_systolic_gemm_XLX_SEP_ PragmaOptions=axis port=in_A_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=in_A
+^
+og_systolic_gemm.cpp:121:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=og_systolic_gemm_XLX_SEP_ PragmaOptions=axis port=in_B_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=in_B
+^
+og_systolic_gemm.cpp:122:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=og_systolic_gemm_XLX_SEP_ PragmaOptions=axis port=out_C_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=out_C
+^
+og_systolic_gemm.cpp:123:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=og_systolic_gemm_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=CTRL_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=CTRL
+^
+og_systolic_gemm.cpp:127:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=og_systolic_gemm_XLX_SEP_ PragmaOptions=variable=A complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=A complete dim=0
+^
+og_systolic_gemm.cpp:128:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=og_systolic_gemm_XLX_SEP_ PragmaOptions=variable=B complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=B complete dim=0
+^
+og_systolic_gemm.cpp:129:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=og_systolic_gemm_XLX_SEP_ PragmaOptions=variable=C complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=C complete dim=0
+^
+og_systolic_gemm.cpp:134:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=og_systolic_gemm_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+og_systolic_gemm.cpp:146:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=og_systolic_gemm_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+36 warnings generated.

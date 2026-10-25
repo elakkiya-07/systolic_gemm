@@ -1,0 +1,173 @@
+
+
+================================================================
+== Vitis HLS Report for 'sink_B'
+================================================================
+* Date:           Mon Oct 26 01:25:23 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        og_systolic_gemm
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.299 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       11|       11|  0.110 us|  0.110 us|   10|   10|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                      |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- SB_VITIS_LOOP_72_1  |        9|        9|         2|          1|          1|     9|       yes|
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     68|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     81|    -|
+|Register         |        -|    -|      14|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      14|    149|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |             Variable Name             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |add_ln71_fu_87_p2                      |         +|   0|  0|  13|           4|           1|
+    |add_ln72_fu_118_p2                     |         +|   0|  0|  10|           2|           1|
+    |ap_block_state2_pp0_stage0_iter1_grp1  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state2_pp0_stage0_iter1_grp2  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state2_pp0_stage0_iter1_grp3  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_149                       |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op32_read_state2          |       and|   0|  0|   2|           1|           1|
+    |icmp_ln71_fu_81_p2                     |      icmp|   0|  0|  13|           4|           4|
+    |icmp_ln72_fu_96_p2                     |      icmp|   0|  0|  10|           2|           2|
+    |ap_block_pp0_stage0_11001              |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001_grp1         |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001_grp2         |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001_grp3         |        or|   0|  0|   2|           1|           1|
+    |select_ln71_fu_102_p3                  |    select|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                          |       xor|   0|  0|   2|           1|           2|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                  |          |   0|  0|  68|          23|          20|
+    +---------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1               |   9|          2|    1|          2|
+    |ap_sig_allocacmp_indvar_flatten_load  |   9|          2|    4|          8|
+    |ap_sig_allocacmp_j_load               |   9|          2|    2|          4|
+    |bS_3_0_blk_n                          |   9|          2|    1|          2|
+    |bS_3_1_blk_n                          |   9|          2|    1|          2|
+    |bS_3_2_blk_n                          |   9|          2|    1|          2|
+    |indvar_flatten_fu_46                  |   9|          2|    4|          8|
+    |j_fu_42                               |   9|          2|    2|          4|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  81|         18|   17|         34|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------+---+----+-----+-----------+
+    |                    Name                   | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                  |  1|   0|    1|          0|
+    |ap_block_pp0_stage0_subdone_grp1_done_reg  |  1|   0|    1|          0|
+    |ap_block_pp0_stage0_subdone_grp2_done_reg  |  1|   0|    1|          0|
+    |ap_block_pp0_stage0_subdone_grp3_done_reg  |  1|   0|    1|          0|
+    |ap_done_reg                                |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                    |  1|   0|    1|          0|
+    |indvar_flatten_fu_46                       |  4|   0|    4|          0|
+    |j_fu_42                                    |  2|   0|    2|          0|
+    |select_ln71_reg_151                        |  2|   0|    2|          0|
+    +-------------------------------------------+---+----+-----+-----------+
+    |Total                                      | 14|   0|   14|          0|
+    +-------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+--------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------------------+-----+-----+------------+--------------+--------------+
+|ap_clk                 |   in|    1|  ap_ctrl_hs|        sink_B|  return value|
+|ap_rst                 |   in|    1|  ap_ctrl_hs|        sink_B|  return value|
+|ap_start               |   in|    1|  ap_ctrl_hs|        sink_B|  return value|
+|ap_done                |  out|    1|  ap_ctrl_hs|        sink_B|  return value|
+|ap_continue            |   in|    1|  ap_ctrl_hs|        sink_B|  return value|
+|ap_idle                |  out|    1|  ap_ctrl_hs|        sink_B|  return value|
+|ap_ready               |  out|    1|  ap_ctrl_hs|        sink_B|  return value|
+|bS_3_1_dout            |   in|   16|     ap_fifo|        bS_3_1|       pointer|
+|bS_3_1_empty_n         |   in|    1|     ap_fifo|        bS_3_1|       pointer|
+|bS_3_1_read            |  out|    1|     ap_fifo|        bS_3_1|       pointer|
+|bS_3_1_num_data_valid  |   in|    3|     ap_fifo|        bS_3_1|       pointer|
+|bS_3_1_fifo_cap        |   in|    3|     ap_fifo|        bS_3_1|       pointer|
+|bS_3_0_dout            |   in|   16|     ap_fifo|        bS_3_0|       pointer|
+|bS_3_0_empty_n         |   in|    1|     ap_fifo|        bS_3_0|       pointer|
+|bS_3_0_read            |  out|    1|     ap_fifo|        bS_3_0|       pointer|
+|bS_3_0_num_data_valid  |   in|    3|     ap_fifo|        bS_3_0|       pointer|
+|bS_3_0_fifo_cap        |   in|    3|     ap_fifo|        bS_3_0|       pointer|
+|bS_3_2_dout            |   in|   16|     ap_fifo|        bS_3_2|       pointer|
+|bS_3_2_empty_n         |   in|    1|     ap_fifo|        bS_3_2|       pointer|
+|bS_3_2_read            |  out|    1|     ap_fifo|        bS_3_2|       pointer|
+|bS_3_2_num_data_valid  |   in|    3|     ap_fifo|        bS_3_2|       pointer|
+|bS_3_2_fifo_cap        |   in|    3|     ap_fifo|        bS_3_2|       pointer|
++-----------------------+-----+-----+------------+--------------+--------------+
+

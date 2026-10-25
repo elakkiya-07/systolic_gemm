@@ -1,0 +1,8 @@
+# Inferred from performance & pipeline pragmas/directives
+set_directive_loop_flatten feed_a/FA
+set_directive_loop_flatten feed_b/FB
+set_directive_loop_flatten sink_a/SA
+set_directive_loop_flatten sink_b/SB
+set_directive_loop_flatten collect/CO
+set_directive_loop_flatten og_systolic_gemm/RD
+set_directive_loop_flatten og_systolic_gemm/WR

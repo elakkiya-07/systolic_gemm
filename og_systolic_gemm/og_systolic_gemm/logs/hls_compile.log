@@ -1,0 +1,741 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=og_systolic_gemm.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=og_systolic_gemm.h' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb_og_systolic_gemm.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/Vitisprojects/og_systolic_gemm/tb_og_systolic_gemm.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=og_systolic_gemm' from hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 6.941 seconds; current allocated memory: 163.121 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'og_systolic_gemm.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (og_systolic_gemm.cpp:87:9)
+Resolution: For help on HLS 214-114 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file og_systolic_gemm.cpp
+Resolution: For help on HLS 200-471 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 18.806 seconds; current allocated memory: 166.133 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,641 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 910 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 536 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 512 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 446 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 781 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 727 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 727 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 727 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 916 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 818 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 755 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 725 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 725 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 743 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 821 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-186] Unrolling loop 'ROW' (og_systolic_gemm.cpp:101:10) in function 'systolic_core' completely with a factor of 3 (og_systolic_gemm.cpp:86:0)
+INFO: [HLS 214-186] Unrolling loop 'COL' (og_systolic_gemm.cpp:103:14) in function 'systolic_core' completely with a factor of 3 (og_systolic_gemm.cpp:86:0)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()' into 'acc_to_axis(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> const&, bool)' (og_systolic_gemm.cpp:20:0)
+INFO: [HLS 214-178] Inlining function 'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()' into 'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (og_systolic_gemm.cpp:119:0)
+INFO: [HLS 214-178] Inlining function 'axis_to_data(hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false> const&)' into 'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (og_systolic_gemm.cpp:119:0)
+INFO: [HLS 214-178] Inlining function 'acc_to_axis(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> const&, bool)' into 'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (og_systolic_gemm.cpp:119:0)
+INFO: [HLS 214-248] Applying array_partition to 'aS': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (og_systolic_gemm.cpp:88:25)
+INFO: [HLS 214-248] Applying array_partition to 'bS': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (og_systolic_gemm.cpp:89:25)
+INFO: [HLS 214-248] Applying array_partition to 'cS': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (og_systolic_gemm.cpp:90:24)
+INFO: [HLS 214-248] Applying array_partition to 'A': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (og_systolic_gemm.cpp:125:12)
+INFO: [HLS 214-248] Applying array_partition to 'B': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (og_systolic_gemm.cpp:125:21)
+INFO: [HLS 214-248] Applying array_partition to 'C': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (og_systolic_gemm.cpp:126:11)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 14.719 seconds; current allocated memory: 168.875 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 168.875 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.191 seconds; current allocated memory: 175.207 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 178.312 MB.
+INFO: [HLS 200-1947] Using 'stable' for argument 'A_0_0.val1' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'A_0_1.val2' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'A_0_2.val3' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'A_1_0.val4' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'A_1_1.val5' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'A_1_2.val6' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'A_2_0.val7' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'A_2_1.val8' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'A_2_2.val9' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'B_0_0.val10' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'B_0_1.val11' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'B_0_2.val12' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'B_1_0.val13' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'B_1_1.val14' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'B_1_2.val15' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'B_2_0.val16' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'B_2_1.val17' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'B_2_2.val18' of dataflow function 'systolic_core' (og_systolic_gemm.cpp:87:1).
+INFO: [XFORM 203-712] Applying dataflow to function 'systolic_core' (og_systolic_gemm.cpp:87:1), detected/extracted 14 process function(s): 
+	 'feed_A'
+	 'feed_B'
+	 'pe.1'
+	 'pe.2'
+	 'pe.3'
+	 'pe.4'
+	 'pe.5'
+	 'pe.6'
+	 'pe.7'
+	 'pe.8'
+	 'pe'
+	 'sink_A'
+	 'sink_B'
+	 'collect'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.571 seconds; current allocated memory: 202.043 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'RD'(og_systolic_gemm.cpp:132:9) and 'VITIS_LOOP_133_1'(og_systolic_gemm.cpp:133:27) in function 'og_systolic_gemm' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'WR'(og_systolic_gemm.cpp:144:9) and 'VITIS_LOOP_145_2'(og_systolic_gemm.cpp:145:27) in function 'og_systolic_gemm' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'FA'(og_systolic_gemm.cpp:50:9) and 'VITIS_LOOP_51_1'(og_systolic_gemm.cpp:51:26) in function 'feed_A' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'CO'(og_systolic_gemm.cpp:78:9) and 'VITIS_LOOP_79_1'(og_systolic_gemm.cpp:79:26) in function 'collect' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'SB' (og_systolic_gemm.cpp:71:9) in function 'sink_B'.
+INFO: [XFORM 203-541] Flattening a loop nest 'SA' (og_systolic_gemm.cpp:64:9) in function 'sink_A'.
+INFO: [XFORM 203-541] Flattening a loop nest 'RD' (og_systolic_gemm.cpp:132:9) in function 'og_systolic_gemm'.
+INFO: [XFORM 203-541] Flattening a loop nest 'WR' (og_systolic_gemm.cpp:144:9) in function 'og_systolic_gemm'.
+INFO: [XFORM 203-541] Flattening a loop nest 'FB' (og_systolic_gemm.cpp:57:9) in function 'feed_B'.
+INFO: [XFORM 203-541] Flattening a loop nest 'FA' (og_systolic_gemm.cpp:50:9) in function 'feed_A'.
+INFO: [XFORM 203-541] Flattening a loop nest 'CO' (og_systolic_gemm.cpp:78:9) in function 'collect'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.567 seconds; current allocated memory: 424.176 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'og_systolic_gemm' ...
+WARNING: [SYN 201-103] Legalizing function name 'pe.1_Pipeline_PE_LOOP' to 'pe_1_Pipeline_PE_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.1' to 'pe_1'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.2_Pipeline_PE_LOOP' to 'pe_2_Pipeline_PE_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.2' to 'pe_2'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.3_Pipeline_PE_LOOP' to 'pe_3_Pipeline_PE_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.3' to 'pe_3'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.4_Pipeline_PE_LOOP' to 'pe_4_Pipeline_PE_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.4' to 'pe_4'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.5_Pipeline_PE_LOOP' to 'pe_5_Pipeline_PE_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.5' to 'pe_5'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.6_Pipeline_PE_LOOP' to 'pe_6_Pipeline_PE_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.6' to 'pe_6'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.7_Pipeline_PE_LOOP' to 'pe_7_Pipeline_PE_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.7' to 'pe_7'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.8_Pipeline_PE_LOOP' to 'pe_8_Pipeline_PE_LOOP'.
+WARNING: [SYN 201-103] Legalizing function name 'pe.8' to 'pe_8'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'RD_VITIS_LOOP_133_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'RD_VITIS_LOOP_133_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.534 seconds; current allocated memory: 429.277 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 430.535 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feed_A' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FA_VITIS_LOOP_51_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'FA_VITIS_LOOP_51_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 431.094 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 431.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'feed_B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'FB_VITIS_LOOP_58_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'FB_VITIS_LOOP_58_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 431.742 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 431.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_1_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=acc) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'PE_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'PE_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 432.242 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.287 seconds; current allocated memory: 432.312 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 432.375 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 432.395 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_2_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=acc) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'PE_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'PE_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 432.664 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 432.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 432.898 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 432.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_3_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=acc) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'PE_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'PE_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 433.273 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 433.340 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 433.445 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.036 seconds; current allocated memory: 433.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_4_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=acc) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'PE_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'PE_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 433.598 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 433.676 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 433.898 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 433.902 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_5_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=acc_5) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'PE_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'PE_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 434.324 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 434.328 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 434.355 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 434.422 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_6_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=acc_4) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'PE_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'PE_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 434.656 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 434.660 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 434.695 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 434.758 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_7_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=acc_3) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'PE_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'PE_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 435.418 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 435.426 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.052 seconds; current allocated memory: 435.746 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 435.750 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_8_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=acc_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'PE_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'PE_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 435.945 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 435.957 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 436.098 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 436.109 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=acc) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'PE_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'PE_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 436.332 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 436.340 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.076 seconds; current allocated memory: 436.625 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 436.691 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sink_A' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'SA_VITIS_LOOP_65_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'SA_VITIS_LOOP_65_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 437.059 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 437.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sink_B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'SB_VITIS_LOOP_72_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'SB_VITIS_LOOP_72_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 437.430 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 437.488 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'collect' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'CO_VITIS_LOOP_79_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'CO_VITIS_LOOP_79_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 438.055 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.045 seconds; current allocated memory: 438.090 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'systolic_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_pe_2_U0 (from feed_B_U0 to pe_2_U0) to 3 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_pe_3_U0 (from feed_B_U0 to pe_3_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_pe_4_U0 (from feed_A_U0 to pe_4_U0) to 3 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_pe_7_U0 (from feed_A_U0 to pe_7_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_sink_A_U0 (from pe_3_U0 to sink_A_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_sink_B_U0 (from pe_7_U0 to sink_B_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_collect_U0 (from pe_1_U0 to collect_U0) to 6 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO cS (from pe_1_U0 to collect_U0) to 6 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO cS_1 (from pe_2_U0 to collect_U0) to 5 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO cS_2 (from pe_3_U0 to collect_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO cS_3 (from pe_4_U0 to collect_U0) to 5 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO cS_4 (from pe_5_U0 to collect_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO cS_5 (from pe_6_U0 to collect_U0) to 3 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO cS_6 (from pe_7_U0 to collect_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO cS_7 (from pe_8_U0 to collect_U0) to 3 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.633 seconds; current allocated memory: 438.984 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 439.496 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'WR_VITIS_LOOP_145_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'WR_VITIS_LOOP_145_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 439.707 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 439.770 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'og_systolic_gemm' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.777 seconds; current allocated memory: 440.062 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 440.340 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1' pipeline 'RD_VITIS_LOOP_133_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.212 seconds; current allocated memory: 442.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feed_A' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feed_A' pipeline 'FA_VITIS_LOOP_51_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feed_A'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.301 seconds; current allocated memory: 446.621 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'feed_B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'feed_B' pipeline 'FB_VITIS_LOOP_58_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'feed_B'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.242 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_1_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pe_1_Pipeline_PE_LOOP' pipeline 'PE_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_1_Pipeline_PE_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.255 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_2_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pe_2_Pipeline_PE_LOOP' pipeline 'PE_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_2_Pipeline_PE_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.752 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.165 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_3_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pe_3_Pipeline_PE_LOOP' pipeline 'PE_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_3_Pipeline_PE_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.151 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_4_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pe_4_Pipeline_PE_LOOP' pipeline 'PE_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_4_Pipeline_PE_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.205 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_5_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pe_5_Pipeline_PE_LOOP' pipeline 'PE_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_5_Pipeline_PE_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.048 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_6_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pe_6_Pipeline_PE_LOOP' pipeline 'PE_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_6_Pipeline_PE_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_7_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pe_7_Pipeline_PE_LOOP' pipeline 'PE_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_7_Pipeline_PE_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_8_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pe_8_Pipeline_PE_LOOP' pipeline 'PE_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_8_Pipeline_PE_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe_Pipeline_PE_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pe_Pipeline_PE_LOOP' pipeline 'PE_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe_Pipeline_PE_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.148 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sink_A' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sink_A' pipeline 'SA_VITIS_LOOP_65_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sink_A'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sink_B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sink_B' pipeline 'SB_VITIS_LOOP_72_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sink_B'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.167 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'collect' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'collect' pipeline 'CO_VITIS_LOOP_79_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'collect'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.252 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'systolic_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'systolic_core'.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_4_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_8_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_1_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_2_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_1_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_3_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cS_U(og_systolic_gemm_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_2_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_4_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cS_1_U(og_systolic_gemm_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_3_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_5_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cS_2_U(og_systolic_gemm_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_5_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_6_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cS_3_U(og_systolic_gemm_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_6_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_7_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cS_4_U(og_systolic_gemm_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_7_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_8_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cS_5_U(og_systolic_gemm_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_9_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_9_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cS_6_U(og_systolic_gemm_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_10_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_10_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cS_7_U(og_systolic_gemm_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'aS_11_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bS_11_U(og_systolic_gemm_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cS_8_U(og_systolic_gemm_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pe_1_U0_U(og_systolic_gemm_start_for_pe_1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pe_4_U0_U(og_systolic_gemm_start_for_pe_4_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pe_7_U0_U(og_systolic_gemm_start_for_pe_7_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pe_2_U0_U(og_systolic_gemm_start_for_pe_2_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pe_3_U0_U(og_systolic_gemm_start_for_pe_3_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_collect_U0_U(og_systolic_gemm_start_for_collect_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pe_5_U0_U(og_systolic_gemm_start_for_pe_5_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pe_6_U0_U(og_systolic_gemm_start_for_pe_6_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_sink_A_U0_U(og_systolic_gemm_start_for_sink_A_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pe_U0_U(og_systolic_gemm_start_for_pe_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_pe_8_U0_U(og_systolic_gemm_start_for_pe_8_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_sink_B_U0_U(og_systolic_gemm_start_for_sink_B_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.497 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2' pipeline 'WR_VITIS_LOOP_145_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.889 seconds; current allocated memory: 447.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'og_systolic_gemm' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/in_A_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/in_A_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/in_A_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/in_A_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/in_B_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/in_B_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/in_B_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/in_B_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/out_C_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/out_C_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/out_C_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'og_systolic_gemm/out_C_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'og_systolic_gemm' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'og_systolic_gemm'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.235 seconds; current allocated memory: 448.590 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.942 seconds; current allocated memory: 455.430 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.749 seconds; current allocated memory: 465.250 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for og_systolic_gemm.
+INFO: [VLOG 209-307] Generating Verilog RTL for og_systolic_gemm.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.01 MHz
+INFO: [HLS 200-112] Total CPU user time: 10 seconds. Total CPU system time: 6 seconds. Total elapsed time: 72.369 seconds; peak allocated memory: 465.312 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 18s

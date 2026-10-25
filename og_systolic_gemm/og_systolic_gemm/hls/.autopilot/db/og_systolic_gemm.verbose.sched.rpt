@@ -1,0 +1,238 @@
+
+
+================================================================
+== Vitis HLS Report for 'og_systolic_gemm'
+================================================================
+* Date:           Mon Oct 26 01:25:16 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        og_systolic_gemm
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.299 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       46|       46|  0.460 us|  0.460 us|   47|   47|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_loc65 = alloca i64 1"   --->   Operation 9 'alloca' 'p_loc65' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_loc64 = alloca i64 1"   --->   Operation 10 'alloca' 'p_loc64' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_loc63 = alloca i64 1"   --->   Operation 11 'alloca' 'p_loc63' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_loc62 = alloca i64 1"   --->   Operation 12 'alloca' 'p_loc62' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_loc61 = alloca i64 1"   --->   Operation 13 'alloca' 'p_loc61' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_loc60 = alloca i64 1"   --->   Operation 14 'alloca' 'p_loc60' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_loc59 = alloca i64 1"   --->   Operation 15 'alloca' 'p_loc59' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%p_loc58 = alloca i64 1"   --->   Operation 16 'alloca' 'p_loc58' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_loc57 = alloca i64 1"   --->   Operation 17 'alloca' 'p_loc57' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_loc56 = alloca i64 1"   --->   Operation 18 'alloca' 'p_loc56' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%p_loc55 = alloca i64 1"   --->   Operation 19 'alloca' 'p_loc55' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_loc54 = alloca i64 1"   --->   Operation 20 'alloca' 'p_loc54' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%p_loc53 = alloca i64 1"   --->   Operation 21 'alloca' 'p_loc53' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_loc52 = alloca i64 1"   --->   Operation 22 'alloca' 'p_loc52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%p_loc51 = alloca i64 1"   --->   Operation 23 'alloca' 'p_loc51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%p_loc50 = alloca i64 1"   --->   Operation 24 'alloca' 'p_loc50' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%p_loc49 = alloca i64 1"   --->   Operation 25 'alloca' 'p_loc49' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%p_loc = alloca i64 1"   --->   Operation 26 'alloca' 'p_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%C = alloca i64 1" [og_systolic_gemm.cpp:126]   --->   Operation 27 'alloca' 'C' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%C_1 = alloca i64 1" [og_systolic_gemm.cpp:126]   --->   Operation 28 'alloca' 'C_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%C_2 = alloca i64 1" [og_systolic_gemm.cpp:126]   --->   Operation 29 'alloca' 'C_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%C_3 = alloca i64 1" [og_systolic_gemm.cpp:126]   --->   Operation 30 'alloca' 'C_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%C_4 = alloca i64 1" [og_systolic_gemm.cpp:126]   --->   Operation 31 'alloca' 'C_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%C_5 = alloca i64 1" [og_systolic_gemm.cpp:126]   --->   Operation 32 'alloca' 'C_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%C_6 = alloca i64 1" [og_systolic_gemm.cpp:126]   --->   Operation 33 'alloca' 'C_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%C_7 = alloca i64 1" [og_systolic_gemm.cpp:126]   --->   Operation 34 'alloca' 'C_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%C_8 = alloca i64 1" [og_systolic_gemm.cpp:126]   --->   Operation 35 'alloca' 'C_8' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.51>
+ST_2 : Operation 36 [2/2] (0.51ns)   --->   "%call_ln0 = call void @og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1, i32 %in_A_V_data_V, i4 %in_A_V_keep_V, i4 %in_A_V_strb_V, i1 %in_A_V_last_V, i32 %in_B_V_data_V, i4 %in_B_V_keep_V, i4 %in_B_V_strb_V, i1 %in_B_V_last_V, i16 %p_loc, i16 %p_loc49, i16 %p_loc50, i16 %p_loc51, i16 %p_loc52, i16 %p_loc53, i16 %p_loc54, i16 %p_loc55, i16 %p_loc56, i16 %p_loc57, i16 %p_loc58, i16 %p_loc59, i16 %p_loc60, i16 %p_loc61, i16 %p_loc62, i16 %p_loc63, i16 %p_loc64, i16 %p_loc65"   --->   Operation 36 'call' 'call_ln0' <Predicate = true> <Delay = 0.51> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 4.91>
+ST_3 : Operation 37 [1/2] (4.91ns)   --->   "%call_ln0 = call void @og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1, i32 %in_A_V_data_V, i4 %in_A_V_keep_V, i4 %in_A_V_strb_V, i1 %in_A_V_last_V, i32 %in_B_V_data_V, i4 %in_B_V_keep_V, i4 %in_B_V_strb_V, i1 %in_B_V_last_V, i16 %p_loc, i16 %p_loc49, i16 %p_loc50, i16 %p_loc51, i16 %p_loc52, i16 %p_loc53, i16 %p_loc54, i16 %p_loc55, i16 %p_loc56, i16 %p_loc57, i16 %p_loc58, i16 %p_loc59, i16 %p_loc60, i16 %p_loc61, i16 %p_loc62, i16 %p_loc63, i16 %p_loc64, i16 %p_loc65"   --->   Operation 37 'call' 'call_ln0' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.58>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%p_loc_load = load i16 %p_loc"   --->   Operation 38 'load' 'p_loc_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%p_loc49_load = load i16 %p_loc49"   --->   Operation 39 'load' 'p_loc49_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%p_loc50_load = load i16 %p_loc50"   --->   Operation 40 'load' 'p_loc50_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%p_loc51_load = load i16 %p_loc51"   --->   Operation 41 'load' 'p_loc51_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%p_loc52_load = load i16 %p_loc52"   --->   Operation 42 'load' 'p_loc52_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%p_loc53_load = load i16 %p_loc53"   --->   Operation 43 'load' 'p_loc53_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%p_loc54_load = load i16 %p_loc54"   --->   Operation 44 'load' 'p_loc54_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%p_loc55_load = load i16 %p_loc55"   --->   Operation 45 'load' 'p_loc55_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%p_loc56_load = load i16 %p_loc56"   --->   Operation 46 'load' 'p_loc56_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%p_loc57_load = load i16 %p_loc57"   --->   Operation 47 'load' 'p_loc57_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%p_loc58_load = load i16 %p_loc58"   --->   Operation 48 'load' 'p_loc58_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%p_loc59_load = load i16 %p_loc59"   --->   Operation 49 'load' 'p_loc59_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%p_loc60_load = load i16 %p_loc60"   --->   Operation 50 'load' 'p_loc60_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%p_loc61_load = load i16 %p_loc61"   --->   Operation 51 'load' 'p_loc61_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%p_loc62_load = load i16 %p_loc62"   --->   Operation 52 'load' 'p_loc62_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%p_loc63_load = load i16 %p_loc63"   --->   Operation 53 'load' 'p_loc63_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%p_loc64_load = load i16 %p_loc64"   --->   Operation 54 'load' 'p_loc64_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%p_loc65_load = load i16 %p_loc65"   --->   Operation 55 'load' 'p_loc65_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [2/2] (1.58ns)   --->   "%call_ln141 = call void @systolic_core, i16 %p_loc57_load, i16 %p_loc59_load, i16 %p_loc55_load, i16 %p_loc63_load, i16 %p_loc65_load, i16 %p_loc61_load, i16 %p_loc51_load, i16 %p_loc53_load, i16 %p_loc49_load, i16 %p_loc56_load, i16 %p_loc58_load, i16 %p_loc54_load, i16 %p_loc62_load, i16 %p_loc64_load, i16 %p_loc60_load, i16 %p_loc50_load, i16 %p_loc52_load, i16 %p_loc_load, i32 %C, i32 %C_1, i32 %C_2, i32 %C_3, i32 %C_4, i32 %C_5, i32 %C_6, i32 %C_7, i32 %C_8" [og_systolic_gemm.cpp:141]   --->   Operation 56 'call' 'call_ln141' <Predicate = true> <Delay = 1.58> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 57 [1/2] (0.00ns)   --->   "%call_ln141 = call void @systolic_core, i16 %p_loc57_load, i16 %p_loc59_load, i16 %p_loc55_load, i16 %p_loc63_load, i16 %p_loc65_load, i16 %p_loc61_load, i16 %p_loc51_load, i16 %p_loc53_load, i16 %p_loc49_load, i16 %p_loc56_load, i16 %p_loc58_load, i16 %p_loc54_load, i16 %p_loc62_load, i16 %p_loc64_load, i16 %p_loc60_load, i16 %p_loc50_load, i16 %p_loc52_load, i16 %p_loc_load, i32 %C, i32 %C_1, i32 %C_2, i32 %C_3, i32 %C_4, i32 %C_5, i32 %C_6, i32 %C_7, i32 %C_8" [og_systolic_gemm.cpp:141]   --->   Operation 57 'call' 'call_ln141' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 58 [1/1] (0.00ns)   --->   "%C_load = load i32 %C" [og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148]   --->   Operation 58 'load' 'C_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 59 [1/1] (0.00ns)   --->   "%C_1_load = load i32 %C_1" [og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148]   --->   Operation 59 'load' 'C_1_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 60 [1/1] (0.00ns)   --->   "%C_2_load = load i32 %C_2" [og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148]   --->   Operation 60 'load' 'C_2_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 61 [1/1] (0.00ns)   --->   "%C_3_load = load i32 %C_3" [og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148]   --->   Operation 61 'load' 'C_3_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 62 [1/1] (0.00ns)   --->   "%C_4_load = load i32 %C_4" [og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148]   --->   Operation 62 'load' 'C_4_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 63 [1/1] (0.00ns)   --->   "%C_5_load = load i32 %C_5" [og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148]   --->   Operation 63 'load' 'C_5_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 64 [1/1] (0.00ns)   --->   "%C_6_load = load i32 %C_6" [og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148]   --->   Operation 64 'load' 'C_6_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 65 [1/1] (0.00ns)   --->   "%C_7_load = load i32 %C_7" [og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148]   --->   Operation 65 'load' 'C_7_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%C_8_load = load i32 %C_8" [og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148]   --->   Operation 66 'load' 'C_8_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 67 [2/2] (0.00ns)   --->   "%call_ln22 = call void @og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2, i32 %C_load, i32 %C_1_load, i32 %C_2_load, i32 %C_3_load, i32 %C_4_load, i32 %C_5_load, i32 %C_6_load, i32 %C_7_load, i32 %C_8_load, i32 %out_C_V_data_V, i4 %out_C_V_keep_V, i4 %out_C_V_strb_V, i1 %out_C_V_last_V" [og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148]   --->   Operation 67 'call' 'call_ln22' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 7.02>
+ST_7 : Operation 68 [1/2] (7.02ns)   --->   "%call_ln22 = call void @og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2, i32 %C_load, i32 %C_1_load, i32 %C_2_load, i32 %C_3_load, i32 %C_4_load, i32 %C_5_load, i32 %C_6_load, i32 %C_7_load, i32 %C_8_load, i32 %out_C_V_data_V, i4 %out_C_V_keep_V, i4 %out_C_V_strb_V, i1 %out_C_V_last_V" [og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148]   --->   Operation 68 'call' 'call_ln22' <Predicate = true> <Delay = 7.02> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 69 [1/1] (0.00ns)   --->   "%spectopmodule_ln117 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [og_systolic_gemm.cpp:117]   --->   Operation 69 'spectopmodule' 'spectopmodule_ln117' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 70 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %in_A_V_data_V, i4 %in_A_V_keep_V, i4 %in_A_V_strb_V, i1 %in_A_V_last_V, void @empty_10, i32 1, i32 1, void @empty_9, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 70 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 71 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %in_A_V_data_V"   --->   Operation 71 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 72 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %in_A_V_keep_V"   --->   Operation 72 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 73 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %in_A_V_strb_V"   --->   Operation 73 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 74 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %in_A_V_last_V"   --->   Operation 74 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 75 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %in_B_V_data_V, i4 %in_B_V_keep_V, i4 %in_B_V_strb_V, i1 %in_B_V_last_V, void @empty_10, i32 1, i32 1, void @empty_9, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 75 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 76 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %in_B_V_data_V"   --->   Operation 76 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 77 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %in_B_V_keep_V"   --->   Operation 77 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 78 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %in_B_V_strb_V"   --->   Operation 78 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 79 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %in_B_V_last_V"   --->   Operation 79 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %out_C_V_data_V, i4 %out_C_V_keep_V, i4 %out_C_V_strb_V, i1 %out_C_V_last_V, void @empty_10, i32 1, i32 1, void @empty_9, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 80 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 81 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %out_C_V_data_V"   --->   Operation 81 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 82 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %out_C_V_keep_V"   --->   Operation 82 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 83 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %out_C_V_strb_V"   --->   Operation 83 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 84 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %out_C_V_last_V"   --->   Operation 84 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 85 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_7, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_6, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0"   --->   Operation 85 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 86 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln132 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %out_C_V_data_V, i4 %out_C_V_keep_V, i4 %out_C_V_strb_V, i1 0, i1 %out_C_V_last_V, i1 0, i1 0, void @empty_5" [og_systolic_gemm.cpp:132]   --->   Operation 86 'specaxissidechannel' 'specaxissidechannel_ln132' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 87 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln132 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %in_B_V_data_V, i4 %in_B_V_keep_V, i4 %in_B_V_strb_V, i1 0, i1 %in_B_V_last_V, i1 0, i1 0, void @empty_4" [og_systolic_gemm.cpp:132]   --->   Operation 87 'specaxissidechannel' 'specaxissidechannel_ln132' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 88 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln132 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %in_A_V_data_V, i4 %in_A_V_keep_V, i4 %in_A_V_strb_V, i1 0, i1 %in_A_V_last_V, i1 0, i1 0, void @empty_3" [og_systolic_gemm.cpp:132]   --->   Operation 88 'specaxissidechannel' 'specaxissidechannel_ln132' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 89 [1/1] (0.00ns)   --->   "%ret_ln151 = ret" [og_systolic_gemm.cpp:151]   --->   Operation 89 'ret' 'ret_ln151' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.518ns
+The critical path consists of the following:
+	'call' operation ('call_ln0') to 'og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1' [60]  (0.518 ns)
+
+ <State 3>: 4.911ns
+The critical path consists of the following:
+	'call' operation ('call_ln0') to 'og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1' [60]  (4.911 ns)
+
+ <State 4>: 1.588ns
+The critical path consists of the following:
+	'load' operation 16 bit ('p_loc_load') on local variable 'p_loc' [61]  (0.000 ns)
+	'call' operation ('call_ln141', og_systolic_gemm.cpp:141) to 'systolic_core' [79]  (1.588 ns)
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 7.024ns
+The critical path consists of the following:
+	'call' operation ('call_ln22', og_systolic_gemm.cpp:22->og_systolic_gemm.cpp:148) to 'og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2' [89]  (7.024 ns)
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

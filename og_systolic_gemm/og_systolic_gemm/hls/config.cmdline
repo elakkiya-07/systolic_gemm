@@ -1,0 +1,3 @@
+relativeroot=C:/Vitisprojects/og_systolic_gemm
+original_argv=-c --mode hls --config C:\Vitisprojects\og_systolic_gemm\hls_config.cfg --work_dir og_systolic_gemm 
+

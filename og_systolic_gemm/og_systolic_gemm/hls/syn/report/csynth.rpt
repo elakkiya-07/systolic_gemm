@@ -1,0 +1,361 @@
+
+
+================================================================
+== Synthesis Summary Report of 'og_systolic_gemm'
+================================================================
++ General Information: 
+    * Date:           Mon Oct 26 01:25:27 2026
+    * Version:        2025.2 (Build 6295257 on Nov 14 2025)
+    * Project:        og_systolic_gemm
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
+* Performance & Resource Estimates: 
++--------------------------------------------------+------+---------------+----------+---------+------+----------+---------+---------+------+------+---------+-----------+------------+-----+
+|                      Modules                     | Issue|               | Iteration|         | Trip |          |      Latency      |      |      |         |           |            |     |
+|                      & Loops                     | Type | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|   (ns)  | Slack| BRAM |   DSP   |     FF    |     LUT    | URAM|
++--------------------------------------------------+------+---------------+----------+---------+------+----------+---------+---------+------+------+---------+-----------+------------+-----+
+|+ og_systolic_gemm                                |     -|              -|         -|       47|     -|        no|       46|  460.000|  0.00|     -|   9 (4%)|  5453 (5%)|  5604 (10%)|    -|
+| + og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1  |     -|              -|         -|        -|     -|       yes|       11|  110.000|  0.00|     -|        -|  305 (~0%)|   158 (~0%)|    -|
+|  o RD_VITIS_LOOP_133_1                           |     -|              -|         2|        1|     9|       yes|        9|   90.000|  7.30|     -|        -|          -|           -|    -|
+| + systolic_core*                                 |     -|              -|         -|       11|     -|  dataflow|       17|  170.000|  0.00|     -|   9 (4%)|  4759 (4%)|   5113 (9%)|    -|
+|  + feed_A                                        |     -|              -|         -|       10|     -|    rewind|       11|  110.000|  0.00|     -|        -|   62 (~0%)|   216 (~0%)|    -|
+|   o FA_VITIS_LOOP_51_1                           |     -|              -|         2|        1|     9|       yes|        9|   90.000|  7.30|     -|        -|          -|           -|    -|
+|  + feed_B                                        |     -|              -|         -|       10|     -|    rewind|       11|  110.000|  0.00|     -|        -|   64 (~0%)|   216 (~0%)|    -|
+|   o FB_VITIS_LOOP_58_1                           |     -|              -|         2|        1|     9|       yes|        9|   90.000|  7.30|     -|        -|          -|           -|    -|
+|  + pe_1                                          |     -|              -|         -|       10|     -|        no|       10|  100.000|  0.03|     -|  1 (~0%)|  114 (~0%)|   197 (~0%)|    -|
+|   + pe_1_Pipeline_PE_LOOP                        |     -|              -|         -|        -|     -|       yes|        8|   80.000|  0.03|     -|  1 (~0%)|  108 (~0%)|   148 (~0%)|    -|
+|    o PE_LOOP                                     |     -|              -|         5|        1|     3|       yes|        6|   60.000|  7.30|     -|        -|          -|           -|    -|
+|  + pe_2                                          |     -|              -|         -|       10|     -|        no|       10|  100.000|  0.03|     -|  1 (~0%)|  114 (~0%)|   197 (~0%)|    -|
+|   + pe_2_Pipeline_PE_LOOP                        |     -|              -|         -|        -|     -|       yes|        8|   80.000|  0.03|     -|  1 (~0%)|  108 (~0%)|   148 (~0%)|    -|
+|    o PE_LOOP                                     |     -|              -|         5|        1|     3|       yes|        6|   60.000|  7.30|     -|        -|          -|           -|    -|
+|  + pe_4                                          |     -|              -|         -|       10|     -|        no|       10|  100.000|  0.03|     -|  1 (~0%)|  113 (~0%)|   188 (~0%)|    -|
+|   + pe_4_Pipeline_PE_LOOP                        |     -|              -|         -|        -|     -|       yes|        8|   80.000|  0.03|     -|  1 (~0%)|  108 (~0%)|   148 (~0%)|    -|
+|    o PE_LOOP                                     |     -|              -|         5|        1|     3|       yes|        6|   60.000|  7.30|     -|        -|          -|           -|    -|
+|  + pe_3                                          |     -|              -|         -|       10|     -|        no|       10|  100.000|  0.03|     -|  1 (~0%)|  114 (~0%)|   197 (~0%)|    -|
+|   + pe_3_Pipeline_PE_LOOP                        |     -|              -|         -|        -|     -|       yes|        8|   80.000|  0.03|     -|  1 (~0%)|  108 (~0%)|   148 (~0%)|    -|
+|    o PE_LOOP                                     |     -|              -|         5|        1|     3|       yes|        6|   60.000|  7.30|     -|        -|          -|           -|    -|
+|  + pe_5                                          |     -|              -|         -|       10|     -|        no|       10|  100.000|  0.03|     -|  1 (~0%)|  113 (~0%)|   188 (~0%)|    -|
+|   + pe_5_Pipeline_PE_LOOP                        |     -|              -|         -|        -|     -|       yes|        8|   80.000|  0.03|     -|  1 (~0%)|  108 (~0%)|   148 (~0%)|    -|
+|    o PE_LOOP                                     |     -|              -|         5|        1|     3|       yes|        6|   60.000|  7.30|     -|        -|          -|           -|    -|
+|  + pe_7                                          |     -|              -|         -|       10|     -|        no|       10|  100.000|  0.03|     -|  1 (~0%)|  114 (~0%)|   197 (~0%)|    -|
+|   + pe_7_Pipeline_PE_LOOP                        |     -|              -|         -|        -|     -|       yes|        8|   80.000|  0.03|     -|  1 (~0%)|  108 (~0%)|   148 (~0%)|    -|
+|    o PE_LOOP                                     |     -|              -|         5|        1|     3|       yes|        6|   60.000|  7.30|     -|        -|          -|           -|    -|
+|  + pe_6                                          |     -|              -|         -|       10|     -|        no|       10|  100.000|  0.03|     -|  1 (~0%)|  114 (~0%)|   197 (~0%)|    -|
+|   + pe_6_Pipeline_PE_LOOP                        |     -|              -|         -|        -|     -|       yes|        8|   80.000|  0.03|     -|  1 (~0%)|  108 (~0%)|   148 (~0%)|    -|
+|    o PE_LOOP                                     |     -|              -|         5|        1|     3|       yes|        6|   60.000|  7.30|     -|        -|          -|           -|    -|
+|  + pe_8                                          |     -|              -|         -|       10|     -|        no|       10|  100.000|  0.03|     -|  1 (~0%)|  113 (~0%)|   188 (~0%)|    -|
+|   + pe_8_Pipeline_PE_LOOP                        |     -|              -|         -|        -|     -|       yes|        8|   80.000|  0.03|     -|  1 (~0%)|  108 (~0%)|   148 (~0%)|    -|
+|    o PE_LOOP                                     |     -|              -|         5|        1|     3|       yes|        6|   60.000|  7.30|     -|        -|          -|           -|    -|
+|  + pe                                            |     -|              -|         -|       10|     -|        no|       10|  100.000|  0.03|     -|  1 (~0%)|  113 (~0%)|   188 (~0%)|    -|
+|   + pe_Pipeline_PE_LOOP                          |     -|              -|         -|        -|     -|       yes|        8|   80.000|  0.03|     -|  1 (~0%)|  108 (~0%)|   148 (~0%)|    -|
+|    o PE_LOOP                                     |     -|              -|         5|        1|     3|       yes|        6|   60.000|  7.30|     -|        -|          -|           -|    -|
+|  + sink_A                                        |     -|              -|         -|       10|     -|    rewind|       11|  110.000|  0.00|     -|        -|   14 (~0%)|   151 (~0%)|    -|
+|   o SA_VITIS_LOOP_65_1                           |     -|              -|         2|        1|     9|       yes|        9|   90.000|  7.30|     -|        -|          -|           -|    -|
+|  + sink_B                                        |     -|              -|         -|       10|     -|    rewind|       11|  110.000|  0.00|     -|        -|   14 (~0%)|   151 (~0%)|    -|
+|   o SB_VITIS_LOOP_72_1                           |     -|              -|         2|        1|     9|       yes|        9|   90.000|  7.30|     -|        -|          -|           -|    -|
+|  + collect                                       |     -|              -|         -|       10|     -|    rewind|       11|  110.000|  0.00|     -|        -|  312 (~0%)|   356 (~0%)|    -|
+|   o CO_VITIS_LOOP_79_1                           |     -|              -|         2|        1|     9|       yes|        9|   90.000|  7.30|     -|        -|          -|           -|    -|
+| + og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2  |     -|              -|         -|        -|     -|       yes|       11|  110.000|  0.28|     -|        -|   11 (~0%)|   187 (~0%)|    -|
+|  o WR_VITIS_LOOP_145_2                           |     -|              -|         2|        1|     9|       yes|        9|   90.000|  7.30|     -|        -|          -|           -|    -|
++--------------------------------------------------+------+---------------+----------+---------+------+----------+---------+---------+------+------+---------+-----------+------------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++------------+------------+---------------+
+| Interface  | Data Width | Address Width |
++------------+------------+---------------+
+| s_axi_CTRL | 32         | 4             |
++------------+------------+---------------+
+
+* S_AXILITE Registers
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface  | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CTRL | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CTRL | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CTRL | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++-----------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface | Direction | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++-----------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| in_A      | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| in_B      | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| out_C     | out       | both          | 32    | 4     | 1     | 1      | 4     | 1      |
++-----------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-----------------------------------------------------------------------------+
+| Argument | Direction | Datatype                                                                    |
++----------+-----------+-----------------------------------------------------------------------------+
+| in_A     | in        | stream<hls::axis<ap_int<32>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0>& |
+| in_B     | in        | stream<hls::axis<ap_int<32>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0>& |
+| out_C    | out       | stream<hls::axis<ap_int<32>, 0UL, 0UL, 0UL, (unsigned char)'8', false>, 0>& |
++----------+-----------+-----------------------------------------------------------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| in_A     | in_A         | interface |
+| in_B     | in_B         | interface |
+| out_C    | out_C        | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------------+-----+--------+----------------+-----------+------------------------+---------+
+| Name                                             | DSP | Pragma | Variable       | Op        | Impl                   | Latency |
++--------------------------------------------------+-----+--------+----------------+-----------+------------------------+---------+
+| + og_systolic_gemm                               | 9   |        |                |           |                        |         |
+|  + og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1 | 0   |        |                |           |                        |         |
+|    icmp_ln132_fu_359_p2                          |     |        | icmp_ln132     | seteq     | auto                   | 0       |
+|    add_ln132_fu_365_p2                           |     |        | add_ln132      | add       | fabric                 | 0       |
+|    icmp_ln133_fu_377_p2                          |     |        | icmp_ln133     | seteq     | auto                   | 0       |
+|    select_ln132_fu_383_p3                        |     |        | select_ln132   | select    | auto_sel               | 0       |
+|    add_ln132_1_fu_392_p2                         |     |        | add_ln132_1    | add       | fabric                 | 0       |
+|    select_ln132_1_fu_398_p3                      |     |        | select_ln132_1 | select    | auto_sel               | 0       |
+|    add_ln133_fu_414_p2                           |     |        | add_ln133      | add       | fabric                 | 0       |
+|  + systolic_core                                 | 9   |        |                |           |                        |         |
+|   + feed_A                                       | 0   |        |                |           |                        |         |
+|     icmp_ln50_fu_179_p2                          |     |        | icmp_ln50      | seteq     | auto                   | 0       |
+|     add_ln50_fu_185_p2                           |     |        | add_ln50       | add       | fabric                 | 0       |
+|     icmp_ln51_fu_197_p2                          |     |        | icmp_ln51      | seteq     | auto                   | 0       |
+|     select_ln50_fu_203_p3                        |     |        | select_ln50    | select    | auto_sel               | 0       |
+|     add_ln50_1_fu_211_p2                         |     |        | add_ln50_1     | add       | fabric                 | 0       |
+|     select_ln50_1_fu_217_p3                      |     |        | select_ln50_1  | select    | auto_sel               | 0       |
+|     sparsemux_7_2_16_1_1_U27                     |     |        | tmp            | sparsemux | onehotencoding_realdef | 0       |
+|     sparsemux_7_2_16_1_1_U28                     |     |        | tmp_9          | sparsemux | onehotencoding_realdef | 0       |
+|     sparsemux_7_2_16_1_1_U29                     |     |        | tmp_s          | sparsemux | onehotencoding_realdef | 0       |
+|     sparsemux_7_2_16_1_1_U30                     |     |        | tmp_1          | sparsemux | onehotencoding_realdef | 0       |
+|     add_ln51_fu_293_p2                           |     |        | add_ln51       | add       | fabric                 | 0       |
+|   + feed_B                                       | 0   |        |                |           |                        |         |
+|     icmp_ln57_fu_179_p2                          |     |        | icmp_ln57      | seteq     | auto                   | 0       |
+|     add_ln57_fu_185_p2                           |     |        | add_ln57       | add       | fabric                 | 0       |
+|     icmp_ln58_fu_197_p2                          |     |        | icmp_ln58      | seteq     | auto                   | 0       |
+|     select_ln57_fu_203_p3                        |     |        | select_ln57    | select    | auto_sel               | 0       |
+|     add_ln57_1_fu_211_p2                         |     |        | add_ln57_1     | add       | fabric                 | 0       |
+|     select_ln57_1_fu_217_p3                      |     |        | select_ln57_1  | select    | auto_sel               | 0       |
+|     sparsemux_7_2_16_1_1_U44                     |     |        | tmp            | sparsemux | onehotencoding_realdef | 0       |
+|     sparsemux_7_2_16_1_1_U45                     |     |        | tmp_6          | sparsemux | onehotencoding_realdef | 0       |
+|     sparsemux_7_2_16_1_1_U46                     |     |        | tmp_7          | sparsemux | onehotencoding_realdef | 0       |
+|     sparsemux_7_2_16_1_1_U47                     |     |        | tmp_8          | sparsemux | onehotencoding_realdef | 0       |
+|     add_ln58_fu_293_p2                           |     |        | add_ln58       | add       | fabric                 | 0       |
+|   + pe_1                                         | 1   |        |                |           |                        |         |
+|    + pe_1_Pipeline_PE_LOOP                       | 1   |        |                |           |                        |         |
+|      icmp_ln35_fu_114_p2                         |     |        | icmp_ln35      | seteq     | auto                   | 0       |
+|      k_13_fu_120_p2                              |     |        | k_13           | add       | fabric                 | 0       |
+|      mac_muladd_16s_16s_32s_32_4_1_U60           | 1   | yes    | prod           | mul       | dsp_slice              | 3       |
+|      mac_muladd_16s_16s_32s_32_4_1_U60           | 1   |        | acc            | add       | dsp_slice              | 3       |
+|   + pe_2                                         | 1   |        |                |           |                        |         |
+|    + pe_2_Pipeline_PE_LOOP                       | 1   |        |                |           |                        |         |
+|      icmp_ln35_fu_114_p2                         |     |        | icmp_ln35      | seteq     | auto                   | 0       |
+|      k_12_fu_120_p2                              |     |        | k_12           | add       | fabric                 | 0       |
+|      mac_muladd_16s_16s_32s_32_4_1_U72           | 1   | yes    | prod           | mul       | dsp_slice              | 3       |
+|      mac_muladd_16s_16s_32s_32_4_1_U72           | 1   |        | acc            | add       | dsp_slice              | 3       |
+|   + pe_4                                         | 1   |        |                |           |                        |         |
+|    + pe_4_Pipeline_PE_LOOP                       | 1   |        |                |           |                        |         |
+|      icmp_ln35_fu_114_p2                         |     |        | icmp_ln35      | seteq     | auto                   | 0       |
+|      k_10_fu_120_p2                              |     |        | k_10           | add       | fabric                 | 0       |
+|      mac_muladd_16s_16s_32s_32_4_1_U94           | 1   | yes    | prod           | mul       | dsp_slice              | 3       |
+|      mac_muladd_16s_16s_32s_32_4_1_U94           | 1   |        | acc            | add       | dsp_slice              | 3       |
+|   + pe_3                                         | 1   |        |                |           |                        |         |
+|    + pe_3_Pipeline_PE_LOOP                       | 1   |        |                |           |                        |         |
+|      icmp_ln35_fu_114_p2                         |     |        | icmp_ln35      | seteq     | auto                   | 0       |
+|      k_11_fu_120_p2                              |     |        | k_11           | add       | fabric                 | 0       |
+|      mac_muladd_16s_16s_32s_32_4_1_U83           | 1   | yes    | prod           | mul       | dsp_slice              | 3       |
+|      mac_muladd_16s_16s_32s_32_4_1_U83           | 1   |        | acc            | add       | dsp_slice              | 3       |
+|   + pe_5                                         | 1   |        |                |           |                        |         |
+|    + pe_5_Pipeline_PE_LOOP                       | 1   |        |                |           |                        |         |
+|      icmp_ln35_fu_114_p2                         |     |        | icmp_ln35      | seteq     | auto                   | 0       |
+|      k_9_fu_120_p2                               |     |        | k_9            | add       | fabric                 | 0       |
+|      mac_muladd_16s_16s_32s_32_4_1_U105          | 1   | yes    | prod           | mul       | dsp_slice              | 3       |
+|      mac_muladd_16s_16s_32s_32_4_1_U105          | 1   |        | acc_5          | add       | dsp_slice              | 3       |
+|   + pe_7                                         | 1   |        |                |           |                        |         |
+|    + pe_7_Pipeline_PE_LOOP                       | 1   |        |                |           |                        |         |
+|      icmp_ln35_fu_114_p2                         |     |        | icmp_ln35      | seteq     | auto                   | 0       |
+|      k_6_fu_120_p2                               |     |        | k_6            | add       | fabric                 | 0       |
+|      mac_muladd_16s_16s_32s_32_4_1_U127          | 1   | yes    | prod           | mul       | dsp_slice              | 3       |
+|      mac_muladd_16s_16s_32s_32_4_1_U127          | 1   |        | acc_3          | add       | dsp_slice              | 3       |
+|   + pe_6                                         | 1   |        |                |           |                        |         |
+|    + pe_6_Pipeline_PE_LOOP                       | 1   |        |                |           |                        |         |
+|      icmp_ln35_fu_114_p2                         |     |        | icmp_ln35      | seteq     | auto                   | 0       |
+|      k_8_fu_120_p2                               |     |        | k_8            | add       | fabric                 | 0       |
+|      mac_muladd_16s_16s_32s_32_4_1_U116          | 1   | yes    | prod           | mul       | dsp_slice              | 3       |
+|      mac_muladd_16s_16s_32s_32_4_1_U116          | 1   |        | acc_4          | add       | dsp_slice              | 3       |
+|   + pe_8                                         | 1   |        |                |           |                        |         |
+|    + pe_8_Pipeline_PE_LOOP                       | 1   |        |                |           |                        |         |
+|      icmp_ln35_fu_114_p2                         |     |        | icmp_ln35      | seteq     | auto                   | 0       |
+|      k_4_fu_120_p2                               |     |        | k_4            | add       | fabric                 | 0       |
+|      mac_muladd_16s_16s_32s_32_4_1_U138          | 1   | yes    | prod           | mul       | dsp_slice              | 3       |
+|      mac_muladd_16s_16s_32s_32_4_1_U138          | 1   |        | acc_2          | add       | dsp_slice              | 3       |
+|   + pe                                           | 1   |        |                |           |                        |         |
+|    + pe_Pipeline_PE_LOOP                         | 1   |        |                |           |                        |         |
+|      icmp_ln35_fu_114_p2                         |     |        | icmp_ln35      | seteq     | auto                   | 0       |
+|      k_2_fu_120_p2                               |     |        | k_2            | add       | fabric                 | 0       |
+|      mac_muladd_16s_16s_32s_32_4_1_U149          | 1   | yes    | prod           | mul       | dsp_slice              | 3       |
+|      mac_muladd_16s_16s_32s_32_4_1_U149          | 1   |        | acc            | add       | dsp_slice              | 3       |
+|   + sink_A                                       | 0   |        |                |           |                        |         |
+|     icmp_ln64_fu_81_p2                           |     |        | icmp_ln64      | seteq     | auto                   | 0       |
+|     add_ln64_fu_87_p2                            |     |        | add_ln64       | add       | fabric                 | 0       |
+|     icmp_ln65_fu_96_p2                           |     |        | icmp_ln65      | seteq     | auto                   | 0       |
+|     select_ln64_fu_102_p3                        |     |        | select_ln64    | select    | auto_sel               | 0       |
+|     add_ln65_fu_118_p2                           |     |        | add_ln65       | add       | fabric                 | 0       |
+|   + sink_B                                       | 0   |        |                |           |                        |         |
+|     icmp_ln71_fu_81_p2                           |     |        | icmp_ln71      | seteq     | auto                   | 0       |
+|     add_ln71_fu_87_p2                            |     |        | add_ln71       | add       | fabric                 | 0       |
+|     icmp_ln72_fu_96_p2                           |     |        | icmp_ln72      | seteq     | auto                   | 0       |
+|     select_ln71_fu_102_p3                        |     |        | select_ln71    | select    | auto_sel               | 0       |
+|     add_ln72_fu_118_p2                           |     |        | add_ln72       | add       | fabric                 | 0       |
+|   + collect                                      | 0   |        |                |           |                        |         |
+|     icmp_ln78_fu_237_p2                          |     |        | icmp_ln78      | seteq     | auto                   | 0       |
+|     add_ln78_fu_243_p2                           |     |        | add_ln78       | add       | fabric                 | 0       |
+|     icmp_ln79_fu_255_p2                          |     |        | icmp_ln79      | seteq     | auto                   | 0       |
+|     select_ln78_fu_261_p3                        |     |        | select_ln78    | select    | auto_sel               | 0       |
+|     add_ln78_1_fu_270_p2                         |     |        | add_ln78_1     | add       | fabric                 | 0       |
+|     select_ln78_1_fu_276_p3                      |     |        | select_ln78_1  | select    | auto_sel               | 0       |
+|     add_ln79_fu_292_p2                           |     |        | add_ln79       | add       | fabric                 | 0       |
+|  + og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2 | 0   |        |                |           |                        |         |
+|    icmp_ln144_fu_182_p2                          |     |        | icmp_ln144     | seteq     | auto                   | 0       |
+|    add_ln144_fu_188_p2                           |     |        | add_ln144      | add       | fabric                 | 0       |
+|    icmp_ln145_fu_205_p2                          |     |        | icmp_ln145     | seteq     | auto                   | 0       |
+|    select_ln144_fu_211_p3                        |     |        | select_ln144   | select    | auto_sel               | 0       |
+|    add_ln144_1_fu_219_p2                         |     |        | add_ln144_1    | add       | fabric                 | 0       |
+|    select_ln144_1_fu_225_p3                      |     |        | select_ln144_1 | select    | auto_sel               | 0       |
+|    icmp_ln147_fu_233_p2                          |     |        | icmp_ln147     | seteq     | auto                   | 0       |
+|    icmp_ln147_1_fu_239_p2                        |     |        | icmp_ln147_1   | seteq     | auto                   | 0       |
+|    out_C_TLAST                                   |     |        | last           | and       | auto                   | 0       |
+|    sparsemux_7_2_32_1_1_U256                     |     |        | tmp_1          | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_32_1_1_U257                     |     |        | tmp_2          | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_32_1_1_U258                     |     |        | tmp_3          | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_32_1_1_U259                     |     |        | bits           | sparsemux | onehotencoding_realdef | 0       |
+|    add_ln145_fu_324_p2                           |     |        | add_ln145      | add       | fabric                 | 0       |
++--------------------------------------------------+-----+--------+----------------+-----------+------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++--------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name               | Usage        | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                    |              |           |      |      |        |          |      |         | Banks            |
++--------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+| + og_systolic_gemm |              |           | 0    | 0    |        |          |      |         |                  |
+|   CTRL_s_axi_U     | interface    | s_axilite |      |      |        |          |      |         |                  |
+|  + systolic_core   |              |           | 0    | 0    |        |          |      |         |                  |
+|    aS_U            | fifo channel | stream    |      |      |        | aS       | srl  | 0       | 16, 4, 1         |
+|    aS_4_U          | fifo channel | stream    |      |      |        | aS_4     | srl  | 0       | 16, 4, 1         |
+|    aS_8_U          | fifo channel | stream    |      |      |        | aS_8     | srl  | 0       | 16, 4, 1         |
+|    bS_U            | fifo channel | stream    |      |      |        | bS       | srl  | 0       | 16, 4, 1         |
+|    bS_1_U          | fifo channel | stream    |      |      |        | bS_1     | srl  | 0       | 16, 4, 1         |
+|    bS_2_U          | fifo channel | stream    |      |      |        | bS_2     | srl  | 0       | 16, 4, 1         |
+|    aS_1_U          | fifo channel | stream    |      |      |        | aS_1     | srl  | 0       | 16, 4, 1         |
+|    bS_3_U          | fifo channel | stream    |      |      |        | bS_3     | srl  | 0       | 16, 4, 1         |
+|    cS_U            | fifo channel | stream    |      |      |        | cS       | srl  | 0       | 32, 2, 1         |
+|    aS_2_U          | fifo channel | stream    |      |      |        | aS_2     | srl  | 0       | 16, 4, 1         |
+|    bS_4_U          | fifo channel | stream    |      |      |        | bS_4     | srl  | 0       | 16, 4, 1         |
+|    cS_1_U          | fifo channel | stream    |      |      |        | cS_1     | srl  | 0       | 32, 2, 1         |
+|    aS_3_U          | fifo channel | stream    |      |      |        | aS_3     | srl  | 0       | 16, 4, 1         |
+|    bS_5_U          | fifo channel | stream    |      |      |        | bS_5     | srl  | 0       | 16, 4, 1         |
+|    cS_2_U          | fifo channel | stream    |      |      |        | cS_2     | srl  | 0       | 32, 2, 1         |
+|    aS_5_U          | fifo channel | stream    |      |      |        | aS_5     | srl  | 0       | 16, 4, 1         |
+|    bS_6_U          | fifo channel | stream    |      |      |        | bS_6     | srl  | 0       | 16, 4, 1         |
+|    cS_3_U          | fifo channel | stream    |      |      |        | cS_3     | srl  | 0       | 32, 2, 1         |
+|    aS_6_U          | fifo channel | stream    |      |      |        | aS_6     | srl  | 0       | 16, 4, 1         |
+|    bS_7_U          | fifo channel | stream    |      |      |        | bS_7     | srl  | 0       | 16, 4, 1         |
+|    cS_4_U          | fifo channel | stream    |      |      |        | cS_4     | srl  | 0       | 32, 2, 1         |
+|    aS_7_U          | fifo channel | stream    |      |      |        | aS_7     | srl  | 0       | 16, 4, 1         |
+|    bS_8_U          | fifo channel | stream    |      |      |        | bS_8     | srl  | 0       | 16, 4, 1         |
+|    cS_5_U          | fifo channel | stream    |      |      |        | cS_5     | srl  | 0       | 32, 2, 1         |
+|    aS_9_U          | fifo channel | stream    |      |      |        | aS_9     | srl  | 0       | 16, 4, 1         |
+|    bS_9_U          | fifo channel | stream    |      |      |        | bS_9     | srl  | 0       | 16, 4, 1         |
+|    cS_6_U          | fifo channel | stream    |      |      |        | cS_6     | srl  | 0       | 32, 2, 1         |
+|    aS_10_U         | fifo channel | stream    |      |      |        | aS_10    | srl  | 0       | 16, 4, 1         |
+|    bS_10_U         | fifo channel | stream    |      |      |        | bS_10    | srl  | 0       | 16, 4, 1         |
+|    cS_7_U          | fifo channel | stream    |      |      |        | cS_7     | srl  | 0       | 32, 2, 1         |
+|    aS_11_U         | fifo channel | stream    |      |      |        | aS_11    | srl  | 0       | 16, 4, 1         |
+|    bS_11_U         | fifo channel | stream    |      |      |        | bS_11    | srl  | 0       | 16, 4, 1         |
+|    cS_8_U          | fifo channel | stream    |      |      |        | cS_8     | srl  | 0       | 32, 2, 1         |
++--------------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+---------+--------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type     | Options | Location                                   | Messages                                                                                                                                                                                                       |
++----------+---------+--------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DATAFLOW |         | in systolic_core (og_systolic_gemm.cpp:87) | Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region                             |
+|          |         |                                            | Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (og_systolic_gemm.cpp:87:9) |
++----------+---------+--------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Inferred Pragmas
++--------------+---------+-------------------------------------------------------------------------------------+-----------------------------------+
+| Type         | Options | Location                                                                            | Inferred From                     |
++--------------+---------+-------------------------------------------------------------------------------------+-----------------------------------+
+| LOOP_FLATTEN |         | loop FA (og_systolic_gemm.cpp:50:9) in feed_a (og_systolic_gemm.cpp:50)             | pipeline og_systolic_gemm.cpp:52  |
+| LOOP_FLATTEN |         | loop FB (og_systolic_gemm.cpp:57:9) in feed_b (og_systolic_gemm.cpp:57)             | pipeline og_systolic_gemm.cpp:59  |
+| LOOP_FLATTEN |         | loop SA (og_systolic_gemm.cpp:64:9) in sink_a (og_systolic_gemm.cpp:64)             | pipeline og_systolic_gemm.cpp:66  |
+| LOOP_FLATTEN |         | loop SB (og_systolic_gemm.cpp:71:9) in sink_b (og_systolic_gemm.cpp:71)             | pipeline og_systolic_gemm.cpp:73  |
+| LOOP_FLATTEN |         | loop CO (og_systolic_gemm.cpp:78:9) in collect (og_systolic_gemm.cpp:78)            | pipeline og_systolic_gemm.cpp:80  |
+| LOOP_FLATTEN |         | loop RD (og_systolic_gemm.cpp:132:9) in og_systolic_gemm (og_systolic_gemm.cpp:132) | pipeline og_systolic_gemm.cpp:134 |
+| LOOP_FLATTEN |         | loop WR (og_systolic_gemm.cpp:144:9) in og_systolic_gemm (og_systolic_gemm.cpp:144) | pipeline og_systolic_gemm.cpp:146 |
++--------------+---------+-------------------------------------------------------------------------------------+-----------------------------------+
+
+* Valid Pragma Syntax
++-----------------+-----------------------------------+------------------------------------------------+
+| Type            | Options                           | Location                                       |
++-----------------+-----------------------------------+------------------------------------------------+
+| PIPELINE        | ii=1                              | in pe (og_systolic_gemm.cpp:36)                |
+| BIND_OP         | variable=prod op=mul impl=dsp     | in pe (og_systolic_gemm.cpp:40)                |
+| PIPELINE        | ii=1                              | in feed_a (og_systolic_gemm.cpp:52)            |
+| PIPELINE        | ii=1                              | in feed_b (og_systolic_gemm.cpp:59)            |
+| PIPELINE        | ii=1                              | in sink_a (og_systolic_gemm.cpp:66)            |
+| PIPELINE        | ii=1                              | in sink_b (og_systolic_gemm.cpp:73)            |
+| PIPELINE        | ii=1                              | in collect (og_systolic_gemm.cpp:80)           |
+| ARRAY_PARTITION | variable=aS complete dim=0        | in systolic_core (og_systolic_gemm.cpp:91)     |
+| ARRAY_PARTITION | variable=bS complete dim=0        | in systolic_core (og_systolic_gemm.cpp:92)     |
+| ARRAY_PARTITION | variable=cS complete dim=0        | in systolic_core (og_systolic_gemm.cpp:93)     |
+| STREAM          | variable=aS depth=4               | in systolic_core (og_systolic_gemm.cpp:94)     |
+| STREAM          | variable=bS depth=4               | in systolic_core (og_systolic_gemm.cpp:95)     |
+| STREAM          | variable=cS depth=2               | in systolic_core (og_systolic_gemm.cpp:96)     |
+| UNROLL          |                                   | in systolic_core (og_systolic_gemm.cpp:102)    |
+| UNROLL          |                                   | in systolic_core (og_systolic_gemm.cpp:104)    |
+| INTERFACE       | axis port=in_A                    | in og_systolic_gemm (og_systolic_gemm.cpp:120) |
+| INTERFACE       | axis port=in_B                    | in og_systolic_gemm (og_systolic_gemm.cpp:121) |
+| INTERFACE       | axis port=out_C                   | in og_systolic_gemm (og_systolic_gemm.cpp:122) |
+| INTERFACE       | s_axilite port=return bundle=CTRL | in og_systolic_gemm (og_systolic_gemm.cpp:123) |
+| ARRAY_PARTITION | variable=A complete dim=0         | in og_systolic_gemm (og_systolic_gemm.cpp:127) |
+| ARRAY_PARTITION | variable=B complete dim=0         | in og_systolic_gemm (og_systolic_gemm.cpp:128) |
+| ARRAY_PARTITION | variable=C complete dim=0         | in og_systolic_gemm (og_systolic_gemm.cpp:129) |
+| PIPELINE        | ii=1                              | in og_systolic_gemm (og_systolic_gemm.cpp:134) |
+| PIPELINE        | ii=1                              | in og_systolic_gemm (og_systolic_gemm.cpp:146) |
++-----------------+-----------------------------------+------------------------------------------------+
+
+

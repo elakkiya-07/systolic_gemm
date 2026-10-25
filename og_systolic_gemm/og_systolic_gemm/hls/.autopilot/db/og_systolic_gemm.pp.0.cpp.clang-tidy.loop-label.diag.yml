@@ -1,0 +1,136 @@
+---
+MainSourceFile:  'C:/Vitisprojects/og_systolic_gemm/og_systolic_gemm/hls/.autopilot/db/og_systolic_gemm.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        'C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp'
+          Offset:          280409
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Vitisprojects\og_systolic_gemm'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        'C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp'
+          Offset:          280880
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Vitisprojects\og_systolic_gemm'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        'C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp'
+          Offset:          281352
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Vitisprojects\og_systolic_gemm'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        'C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp'
+          Offset:          626339
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Vitisprojects\og_systolic_gemm'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_51_1:  '
+      FilePath:        og_systolic_gemm.cpp
+      FileOffset:      51
+      Replacements:
+        - FilePath:        'C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp'
+          Offset:          2251194
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_51_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Vitisprojects\og_systolic_gemm'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_58_1:  '
+      FilePath:        og_systolic_gemm.cpp
+      FileOffset:      58
+      Replacements:
+        - FilePath:        'C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp'
+          Offset:          2251414
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_58_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Vitisprojects\og_systolic_gemm'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_65_1:  '
+      FilePath:        og_systolic_gemm.cpp
+      FileOffset:      65
+      Replacements:
+        - FilePath:        'C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp'
+          Offset:          2251618
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_65_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Vitisprojects\og_systolic_gemm'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_72_1:  '
+      FilePath:        og_systolic_gemm.cpp
+      FileOffset:      72
+      Replacements:
+        - FilePath:        'C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp'
+          Offset:          2251814
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_72_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Vitisprojects\og_systolic_gemm'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_79_1:  '
+      FilePath:        og_systolic_gemm.cpp
+      FileOffset:      79
+      Replacements:
+        - FilePath:        'C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp'
+          Offset:          2252021
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_79_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Vitisprojects\og_systolic_gemm'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_133_1:  '
+      FilePath:        og_systolic_gemm.cpp
+      FileOffset:      133
+      Replacements:
+        - FilePath:        'C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp'
+          Offset:          2253673
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_133_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Vitisprojects\og_systolic_gemm'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_145_2:  '
+      FilePath:        og_systolic_gemm.cpp
+      FileOffset:      145
+      Replacements:
+        - FilePath:        'C:\Vitisprojects\og_systolic_gemm\og_systolic_gemm\hls\.autopilot\db\og_systolic_gemm.pp.0.cpp'
+          Offset:          2253921
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_145_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Vitisprojects\og_systolic_gemm'
+...

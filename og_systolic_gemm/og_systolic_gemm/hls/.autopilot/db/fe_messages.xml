@@ -1,0 +1,147 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:87:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:149:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:154:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:255:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:372:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:380:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:389:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:400:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:412:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:423:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h:440:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:36:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:40:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=prod op=mul impl=dsp" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:52:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="feed_A" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:59:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="feed_B" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:66:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="sink_A" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:73:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="sink_B" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:80:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="collect" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:87:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_core" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:91:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=aS complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:92:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bS complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:93:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=cS complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:94:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=aS depth=4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:95:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bS depth=4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:96:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=cS depth=2" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:102:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:104:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="og_systolic_gemm" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=og_systolic_gemm" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:120:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="og_systolic_gemm" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=in_A" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:121:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="og_systolic_gemm" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=in_B" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:122:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="og_systolic_gemm" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=out_C" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:123:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="og_systolic_gemm" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:127:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="og_systolic_gemm" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=A complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:128:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="og_systolic_gemm" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=B complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:129:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="og_systolic_gemm" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=C complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:134:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="og_systolic_gemm" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="og_systolic_gemm.cpp:146:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="og_systolic_gemm" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:86:0" msg_body="Unrolling loop 'ROW' (og_systolic_gemm.cpp:101:10) in function 'systolic_core' completely with a factor of 3">
+        <args Factor="3" LoopLoc="og_systolic_gemm.cpp:101:10" LoopName="ROW"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:86:0" msg_body="Unrolling loop 'COL' (og_systolic_gemm.cpp:103:14) in function 'systolic_core' completely with a factor of 3">
+        <args Factor="3" LoopLoc="og_systolic_gemm.cpp:103:14" LoopName="COL"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:20:0" msg_body="Inlining function 'hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;::axis()' into 'acc_to_axis(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, bool)'">
+        <args Callee="hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;::axis()" Callee-DebugLoc="File {C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h} Line 217 Column 0" Caller="acc_to_axis(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, bool)" Caller-DebugLoc="File og_systolic_gemm.cpp Line 20 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:119:0" msg_body="Inlining function 'hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;::axis()' into 'og_systolic_gemm(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;::axis()" Callee-DebugLoc="File {C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h} Line 217 Column 0" Caller="og_systolic_gemm(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File og_systolic_gemm.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:119:0" msg_body="Inlining function 'axis_to_data(hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt; const&amp;)' into 'og_systolic_gemm(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="axis_to_data(hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt; const&amp;)" Callee-DebugLoc="File og_systolic_gemm.cpp Line 13 Column 0" Caller="og_systolic_gemm(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File og_systolic_gemm.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:119:0" msg_body="Inlining function 'acc_to_axis(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, bool)' into 'og_systolic_gemm(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="acc_to_axis(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, bool)" Callee-DebugLoc="File og_systolic_gemm.cpp Line 20 Column 0" Caller="og_systolic_gemm(hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File og_systolic_gemm.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:88:25" msg_body="Applying array_partition to 'aS': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="aS"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:89:25" msg_body="Applying array_partition to 'bS': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="bS"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:90:24" msg_body="Applying array_partition to 'cS': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="cS"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:125:12" msg_body="Applying array_partition to 'A': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="A"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:125:21" msg_body="Applying array_partition to 'B': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="B"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="og_systolic_gemm.cpp:126:11" msg_body="Applying array_partition to 'C': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="C"/>
+    </msg>
+</xilinx:hls_fe_msgs>

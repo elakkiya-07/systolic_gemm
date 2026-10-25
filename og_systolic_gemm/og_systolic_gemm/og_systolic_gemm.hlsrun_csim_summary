@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/Vitisprojects\\og_systolic_gemm\\og_systolic_gemm\\og_systolic_gemm.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/26/26 01:20:31",
+ "timestampMillis": "1792957831694",
+ "buildStep": {
+  "cmdId": "202c4b6e-9943-4ce1-818e-cdd0a2d5a39b",
+  "name": "vitis-run",
+  "logFile": "C:/Vitisprojects\\og_systolic_gemm\\og_systolic_gemm\\logs\\og_systolic_gemm.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Vitisprojects\\og_systolic_gemm\\hls_config.cfg --work_dir og_systolic_gemm ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Vitisprojects\\og_systolic_gemm\\hls_config.cfg",
+   "--work_dir",
+   "og_systolic_gemm"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Vitisprojects\\og_systolic_gemm"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/26/26 01:20:31",
+ "timestampMillis": "1792957831697",
+ "status": {
+  "cmdId": "202c4b6e-9943-4ce1-818e-cdd0a2d5a39b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/26/26 01:20:44",
+ "timestampMillis": "1792957844081",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Vitisprojects\\og_systolic_gemm\\og_systolic_gemm.cpp",
+     "C:/Vitisprojects\\og_systolic_gemm\\og_systolic_gemm.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/26/26 01:20:44",
+ "timestampMillis": "1792957844084",
+ "buildStep": {
+  "cmdId": "ed9038e4-9b89-419c-af62-4cd64c9faed0",
+  "name": "",
+  "logFile": "C:/Vitisprojects\\og_systolic_gemm\\og_systolic_gemm\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Vitisprojects\\og_systolic_gemm"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/26/26 01:20:44",
+ "timestampMillis": "1792957844085",
+ "status": {
+  "cmdId": "ed9038e4-9b89-419c-af62-4cd64c9faed0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/26/26 01:21:00",
+ "timestampMillis": "1792957860054",
+ "status": {
+  "cmdId": "ed9038e4-9b89-419c-af62-4cd64c9faed0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/26/26 01:21:00",
+ "timestampMillis": "1792957860266",
+ "status": {
+  "cmdId": "202c4b6e-9943-4ce1-818e-cdd0a2d5a39b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/26/26 01:21:00",
+ "timestampMillis": "1792957860270",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/26/26 01:21:00",
+ "timestampMillis": "1792957860271",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

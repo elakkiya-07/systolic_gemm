@@ -1,0 +1,195 @@
+
+
+================================================================
+== Vitis HLS Report for 'og_systolic_gemm'
+================================================================
+* Date:           Mon Oct 26 01:25:27 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        og_systolic_gemm
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.299 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       46|       46|  0.460 us|  0.460 us|   47|   47|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------------+-----------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |                                                          |                                               |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+        |                         Instance                         |                     Module                    |   min   |   max   |    min   |    max   | min | max |        Type       |
+        +----------------------------------------------------------+-----------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |grp_og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1_fu_174  |og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1  |       11|       11|  0.110 us|  0.110 us|    0|    0|  loop pipeline stp|
+        |grp_systolic_core_fu_212                                  |systolic_core                                  |       17|       17|  0.170 us|  0.170 us|   11|   11|           dataflow|
+        |grp_og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2_fu_243  |og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2  |       11|       11|  0.110 us|  0.110 us|    0|    0|  loop pipeline stp|
+        +----------------------------------------------------------+-----------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      4|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    9|    5111|   5488|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|    102|    -|
+|Register         |        -|    -|     342|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    9|    5453|   5594|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    4|       5|     10|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------------+-----------------------------------------------+---------+----+------+------+-----+
+    |                         Instance                         |                     Module                    | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +----------------------------------------------------------+-----------------------------------------------+---------+----+------+------+-----+
+    |CTRL_s_axi_U                                              |CTRL_s_axi                                     |        0|   0|    36|    40|    0|
+    |grp_og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1_fu_174  |og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1  |        0|   0|   305|   158|    0|
+    |grp_og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2_fu_243  |og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2  |        0|   0|    11|   187|    0|
+    |grp_systolic_core_fu_212                                  |systolic_core                                  |        0|   9|  4759|  5103|    0|
+    +----------------------------------------------------------+-----------------------------------------------+---------+----+------+------+-----+
+    |Total                                                     |                                               |        0|   9|  5111|  5488|    0|
+    +----------------------------------------------------------+-----------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                             Variable Name                             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |grp_og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2_fu_243_out_C_TREADY  |       and|   0|  0|   2|           1|           1|
+    |ap_sync_grp_systolic_core_fu_212_ap_ready                              |        or|   0|  0|   2|           1|           1|
+    +-----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                  |          |   0|  0|   4|           2|           2|
+    +-----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                 |  48|          9|    1|          9|
+    |in_A_TREADY_int_regslice  |   9|          2|    1|          2|
+    |in_B_TREADY_int_regslice  |   9|          2|    1|          2|
+    |out_C_TDATA_int_regslice  |   9|          2|   32|         64|
+    |out_C_TKEEP_int_regslice  |   9|          2|    4|          8|
+    |out_C_TLAST_int_regslice  |   9|          2|    1|          2|
+    |out_C_TSTRB_int_regslice  |   9|          2|    4|          8|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     | 102|         21|   44|         95|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+    |                                  Name                                 | FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+    |C_1_fu_142                                                             |  32|   0|   32|          0|
+    |C_2_fu_146                                                             |  32|   0|   32|          0|
+    |C_3_fu_150                                                             |  32|   0|   32|          0|
+    |C_4_fu_154                                                             |  32|   0|   32|          0|
+    |C_5_fu_158                                                             |  32|   0|   32|          0|
+    |C_6_fu_162                                                             |  32|   0|   32|          0|
+    |C_7_fu_166                                                             |  32|   0|   32|          0|
+    |C_8_fu_170                                                             |  32|   0|   32|          0|
+    |C_fu_138                                                               |  32|   0|   32|          0|
+    |ap_CS_fsm                                                              |   8|   0|    8|          0|
+    |ap_sync_reg_grp_systolic_core_fu_212_ap_done                           |   1|   0|    1|          0|
+    |ap_sync_reg_grp_systolic_core_fu_212_ap_ready                          |   1|   0|    1|          0|
+    |grp_og_systolic_gemm_Pipeline_RD_VITIS_LOOP_133_1_fu_174_ap_start_reg  |   1|   0|    1|          0|
+    |grp_og_systolic_gemm_Pipeline_WR_VITIS_LOOP_145_2_fu_243_ap_start_reg  |   1|   0|    1|          0|
+    |grp_systolic_core_fu_212_ap_start_reg                                  |   1|   0|    1|          0|
+    |out_C_TDATA_reg                                                        |  32|   0|   32|          0|
+    |out_C_TKEEP_reg                                                        |   4|   0|    4|          0|
+    |out_C_TLAST_reg                                                        |   1|   0|    1|          0|
+    |out_C_TSTRB_reg                                                        |   4|   0|    4|          0|
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                  | 342|   0|  342|          0|
+    +-----------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++--------------------+-----+-----+------------+------------------+--------------+
+|s_axi_CTRL_AWVALID  |   in|    1|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_AWREADY  |  out|    1|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_AWADDR   |   in|    4|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_WVALID   |   in|    1|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_WREADY   |  out|    1|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_WDATA    |   in|   32|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_WSTRB    |   in|    4|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_ARVALID  |   in|    1|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_ARREADY  |  out|    1|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_ARADDR   |   in|    4|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_RVALID   |  out|    1|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_RREADY   |   in|    1|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_RDATA    |  out|   32|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_RRESP    |  out|    2|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_BVALID   |  out|    1|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_BREADY   |   in|    1|       s_axi|              CTRL|   return void|
+|s_axi_CTRL_BRESP    |  out|    2|       s_axi|              CTRL|   return void|
+|ap_clk              |   in|    1|  ap_ctrl_hs|  og_systolic_gemm|  return value|
+|ap_rst_n            |   in|    1|  ap_ctrl_hs|  og_systolic_gemm|  return value|
+|interrupt           |  out|    1|  ap_ctrl_hs|  og_systolic_gemm|  return value|
+|in_A_TDATA          |   in|   32|        axis|     in_A_V_data_V|       pointer|
+|in_A_TVALID         |   in|    1|        axis|     in_A_V_last_V|       pointer|
+|in_A_TREADY         |  out|    1|        axis|     in_A_V_last_V|       pointer|
+|in_A_TLAST          |   in|    1|        axis|     in_A_V_last_V|       pointer|
+|in_A_TKEEP          |   in|    4|        axis|     in_A_V_keep_V|       pointer|
+|in_A_TSTRB          |   in|    4|        axis|     in_A_V_strb_V|       pointer|
+|in_B_TDATA          |   in|   32|        axis|     in_B_V_data_V|       pointer|
+|in_B_TVALID         |   in|    1|        axis|     in_B_V_last_V|       pointer|
+|in_B_TREADY         |  out|    1|        axis|     in_B_V_last_V|       pointer|
+|in_B_TLAST          |   in|    1|        axis|     in_B_V_last_V|       pointer|
+|in_B_TKEEP          |   in|    4|        axis|     in_B_V_keep_V|       pointer|
+|in_B_TSTRB          |   in|    4|        axis|     in_B_V_strb_V|       pointer|
+|out_C_TDATA         |  out|   32|        axis|    out_C_V_data_V|       pointer|
+|out_C_TVALID        |  out|    1|        axis|    out_C_V_last_V|       pointer|
+|out_C_TREADY        |   in|    1|        axis|    out_C_V_last_V|       pointer|
+|out_C_TLAST         |  out|    1|        axis|    out_C_V_last_V|       pointer|
+|out_C_TKEEP         |  out|    4|        axis|    out_C_V_keep_V|       pointer|
+|out_C_TSTRB         |  out|    4|        axis|    out_C_V_strb_V|       pointer|
++--------------------+-----+-----+------------+------------------+--------------+
+

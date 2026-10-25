@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../tb_og_systolic_gemm.cpp in debug mode
+   Compiling ../../../../og_systolic_gemm.cpp in debug mode
+   Generating csim.exe
+Systolic GEMM (AXI-Stream) result:
+   30.000    36.000    42.000 
+   66.000    81.000    96.000 
+  102.000   126.000   150.000 
+
+Expected: 30 36 42 / 66 81 96 / 102 126 150
+RMS % error = 0.000000%
+TEST PASSED
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 9
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

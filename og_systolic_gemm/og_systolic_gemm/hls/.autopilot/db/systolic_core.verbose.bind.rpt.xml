@@ -1,0 +1,59 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'systolic_core'" level="0">
+<item name = "Date">Mon Oct 26 01:25:15 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">og_systolic_gemm</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.299 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">17, 17, 0.170 us, 0.170 us, 11, 11, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_feed_A_fu_418">feed_A, 11, 11, 0.110 us, 0.110 us, 10, 10, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_feed_B_fu_443">feed_B, 11, 11, 0.110 us, 0.110 us, 10, 10, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_pe_1_fu_468">pe_1, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_pe_2_fu_477">pe_2, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_pe_4_fu_486">pe_4, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_pe_3_fu_495">pe_3, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_pe_5_fu_504">pe_5, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_pe_7_fu_513">pe_7, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_pe_6_fu_522">pe_6, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_pe_8_fu_531">pe_8, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_pe_fu_540">pe, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_sink_A_fu_549">sink_A, 11, 11, 0.110 us, 0.110 us, 10, 10, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_sink_B_fu_556">sink_B, 11, 11, 0.110 us, 0.110 us, 10, 10, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_collect_fu_563">collect, 11, 11, 0.110 us, 0.110 us, 10, 10, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

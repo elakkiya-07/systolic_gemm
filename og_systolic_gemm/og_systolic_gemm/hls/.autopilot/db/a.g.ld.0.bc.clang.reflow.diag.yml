@@ -1,0 +1,774 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        _ZN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EE4readEv
+Args:            
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>::read()'
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 98, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'feed_A(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [4])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 49, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 99, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'feed_B(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 56, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 105, Column: 13 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'pe(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 111, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'sink_A(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [4])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 63, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 112, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'sink_B(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 113, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'collect(hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 77, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 21, Column: 12 }
+Function:        _ZL11acc_to_axisRK8ap_fixedILi32ELi16EL9ap_q_mode5EL9ap_o_mode3ELi0EEb
+Args:            
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'acc_to_axis(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> const&, bool)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 20, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 135, Column: 41 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 135, Column: 23 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - Callee:          'axis_to_data(hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false> const&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 13, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 141, Column: 5 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - Callee:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 148, Column: 25 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - Callee:          'acc_to_axis(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> const&, bool)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 20, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ROW
+  - String:          ''' ('
+  - LoopLoc:         'og_systolic_gemm.cpp:101:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COL
+  - String:          ''' ('
+  - LoopLoc:         'og_systolic_gemm.cpp:103:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COL
+  - String:          ''' ('
+  - LoopLoc:         'og_systolic_gemm.cpp:103:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COL
+  - String:          ''' ('
+  - LoopLoc:         'og_systolic_gemm.cpp:103:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 98, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'feed_A(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [4])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 49, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 99, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'feed_B(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 56, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 105, Column: 13 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'pe(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 111, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'sink_A(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [4])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 63, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 112, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'sink_B(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 113, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'collect(hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 77, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 21, Column: 12 }
+Function:        _ZL11acc_to_axisRK8ap_fixedILi32ELi16EL9ap_q_mode5EL9ap_o_mode3ELi0EEb
+Args:            
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'acc_to_axis(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> const&, bool)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 20, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 135, Column: 41 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 135, Column: 23 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - Callee:          'axis_to_data(hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false> const&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 13, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 141, Column: 5 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - Callee:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 148, Column: 25 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - Callee:          'acc_to_axis(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> const&, bool)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 20, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_og_systolic_gemm_ir
+Args:            
+  - Callee:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_og_systolic_gemm_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 20, Column: 0 }
+Function:        _ZL11acc_to_axisRK8ap_fixedILi32ELi16EL9ap_q_mode5EL9ap_o_mode3ELi0EEb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'acc_to_axis(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> const&, bool)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>::axis()'
+    DebugLoc:        { File: 'C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\ap_axi_sdata.h', 
+                       Line: 217, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'axis_to_data(hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false> const&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 13, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'acc_to_axis(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> const&, bool)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 20, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 88, Column: 25 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          aS
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 89, Column: 25 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          bS
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 90, Column: 24 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          cS
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 125, Column: 12 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 125, Column: 21 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          B
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 126, Column: 11 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          C
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 98, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'feed_A(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [4]) (.127.128)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 49, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 99, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'feed_B(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [3]) (.129.130)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 56, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 105, Column: 13 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'pe(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.102)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 105, Column: 13 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'pe(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.103)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 105, Column: 13 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'pe(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.104)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 105, Column: 13 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'pe(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.105)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 105, Column: 13 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'pe(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.106)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 105, Column: 13 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'pe(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.107)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 105, Column: 13 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'pe(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.108)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 105, Column: 13 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'pe(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&) (.109)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 105, Column: 13 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'pe(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 111, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'sink_A(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [4])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 63, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 112, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'sink_B(hls::stream<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 70, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 113, Column: 5 }
+Function:        _ZL13systolic_corePA3_8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_PA3_S_ILi32ELi16ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'collect(hls::stream<ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3]) (.131.132)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 77, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: og_systolic_gemm.cpp, Line: 141, Column: 5 }
+Function:        _Z16og_systolic_gemmRN3hls6streamINS_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_S6_
+Args:            
+  - Callee:          'systolic_core(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3])'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'og_systolic_gemm(hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: og_systolic_gemm.cpp, Line: 119, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

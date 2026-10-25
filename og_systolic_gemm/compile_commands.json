@@ -6,6 +6,7 @@
       "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
       "-fhls",
       "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=og_systolic_gemm",
       "-c",
       "C:\\Vitisprojects\\og_systolic_gemm\\og_systolic_gemm.cpp"
     ],
