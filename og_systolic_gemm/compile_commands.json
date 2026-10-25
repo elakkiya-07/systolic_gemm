@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "C:\\Vitisprojects\\og_systolic_gemm",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-c",
+      "C:\\Vitisprojects\\og_systolic_gemm\\og_systolic_gemm.cpp"
+    ],
+    "file": "C:\\Vitisprojects\\og_systolic_gemm\\og_systolic_gemm.cpp"
+  },
+  {
+    "directory": "C:\\Vitisprojects\\og_systolic_gemm",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-c",
+      "C:\\Vitisprojects\\og_systolic_gemm\\tb_og_systolic_gemm.cpp"
+    ],
+    "file": "C:\\Vitisprojects\\og_systolic_gemm\\tb_og_systolic_gemm.cpp"
+  }
+]
